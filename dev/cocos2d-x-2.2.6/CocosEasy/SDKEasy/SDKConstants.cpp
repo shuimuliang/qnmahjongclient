@@ -1,0 +1,26 @@
+//
+//  SDKConstants.cpp
+//  client
+//
+//  Created by liulihua on 14-8-13.
+//
+//
+
+#include "SDKConstants.h"
+
+//for analysis
+const char* kAppEventSDKInitFailed = "sdk_init_failed";
+const char* kAppEventSDKLoginFailed = "sdk_login_failed";
+const char* kAppEventSDKPayFailed = "sdk_pay_failed";
+
+const char* googlePublicKey = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnCHcNMFI+w7oyYVckrRhTanX9GqOhZBJBsgu8WuONBG3etS1EDsva2aYBBn+zhQY3WRDxPh2HIfpgqco5VdfeMDTggLJsaJLdGVwW+wyqeNc88Sai1eMTugkiuMonbqNdtG3fFkuvOO/dEhJjIQ3UEH26bSt4kT9fiZJFrEiKEYn8luJ16ZfLUCqoGca5L29ruOQpzB9kkLGu5b8vHTFYURGNA+mWoDveu0ETnlizZkollYGYoef8b4t/cAr/ZzXnutCSILe/lh8xJKFC7K/CYZdDLU0R2MMWL6GSBnfcsjV8g94LwW2cZJX/7wT3UcdLfLXDQUpjpxI71Mdw0ZtVwIDAQAB";
+const char* googlePublicKey_USA = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApU7nfDmGreEWR3NZ5fpa/2E5Dlslyh7ePGtKpgqSBDQB1WMzLgyjHW7U6B0MlGlzfbWxbVmEcgbHOzqw8+TwbiI5YJYqS726hPG1Ie6EsHW9N4NxZ/Xm7MfDO9I2prb4vCxgHWBxYZuc9Pkfnq2ROoMqfC879yFUUHLL33JIqarx1KkIkPFmq/vSQRfGYLHtEipElYAeX3qDeMrMwClZXTrf+Sn8uTxV7bQw4VrpuvdrNnT8GEqIoC9oH5BnFtbzveSgsLc8f2tzOeyJbJonP0u3ynZqW/nRoSngcmz/Z7UdyH7HieFchtOYlDdneYbfHWJEiA80Sc0NFBIrl7IFDwIDAQAB";
+const char* googlePublicKey_MaLai = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsINFFrtBad0rOjQbC0Fc7lnX7/y4Pi6b4fmKekAUQdUZHQFr12DMG1wwXc3VGzlVW6YqQz4oLdxae9OVkNvAH284zcp84uMO+jQZdSL7hkKYCV4r7C+lFvmbPoXBls37Fih7L5bG3TuBqttcpy3CXXuQZHxzPLKsvQfsHAnP160pEPWh5KmyRbp+CblZ25PHWpH/V/9y1/l27jxiBsRxWHhK/qu824Ipf/nktHsfvwX6eX8Bdoeyxf0UjAYiWvJkk5gOvnY6AGSPm5GUzRJRdht9LktkbOlScWf1YwpBNu4sfOYbKOMg2BUVbipfwc4bFjoMxPBZxnafKCGOBF/qjQIDAQAB";
+const char* googlePublicKey_Arabic = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkoXDB2J03ToZpY9AVDY+DlTT4UvEpPtt2mfdYwhn7lx351UR7mzhEXbh9eAIpr61SYa3xoDGHPOmfLnE01hbS0SQcIrTMincs47/kUeCx/+qZQCuPS5XfuyRZFSuvE6/rFlrs6XIFl96O8wYFct5tdmLwFaS/Lq/p0gZwOMZ12A7a1dedQmE+OmKbE9K+Xswc/va2lhYINIBtgODXliuBxbvssu+XwogLXAA7gTcKsYefQ8HLE3tDVpAVEaaC4mBOd0vHqXxYYpiV+7bP9dEA47Vih+IpWyK1vDnll8Yzs4dTQ077wzveys/49j5jQefGpnUv61CENfDEyzyxub2UwIDAQAB";
+
+
+const char* paymentWallPrivate = "57769339beb377f6106aac5c8b4ce04d";
+const char* paymentWallPublic = "320e432b34bfd51796c36a8432ce6d08";
+
+const char* slotBuglyAndroidID = "900021954";
+const char* zjhBuglyAndroidID = "92b35d5e56";

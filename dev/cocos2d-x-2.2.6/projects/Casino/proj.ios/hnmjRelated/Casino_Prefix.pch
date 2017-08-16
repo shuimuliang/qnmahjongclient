@@ -1,0 +1,33 @@
+//
+// Prefix header for all source files of the 'Casino' target in the 'Casino' project
+//
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+	#import <UIKit/UIKit.h>
+
+//base
+//#define CASINO_CHANNEL_ID SDK_CHANNEL_APP_STORE_ZJH
+#define CASINO_CHANNEL_ID 110
+
+
+#define CASINO_VERSION_ZJH 1
+
+#define CASINO_LOGIN_TYPE kAppThirdLoginTypeNone
+
+//sdk related
+#define CASINO_TALKINGDATA_KEY @"79E51F9C7E754F02A3FA145E212A9CE5"
+#define CASINO_ADTRAKING_APPID @"5eebbd1a2e524961beccf7c0937218a5"
+#define CASINO_UMENG_KEY @"56371420e0f55a3fbd002d43"
+#define CASINO_APPFLYER_ID @"1054291945"
+#define CASINO_ADTRAKING_CHANNEL_NAME @"AppStore"
+
+#define CASINO_TALKING_GAME_CHANNEL_NAME @"千胜麻将_IOS"
+
+#define CASINO_CHUKONG_PUBLISHER_ID @"803497686-C9E9F9-A473-797D-1AC79BBA7"
+#define CASINO_VUNGLE_ID @"586b3d3cd9d96d5a520004b3"
+#define CASINO_ENABLE_AD 1
+
+#define CASINO_WXAPPID @"wx123e1af1dca25886"
+
+#endif

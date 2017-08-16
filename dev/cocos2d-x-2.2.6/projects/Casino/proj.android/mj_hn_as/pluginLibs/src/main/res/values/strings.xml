@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lucky Casino Master</string>
+    <string name="exit_ask">确定要退出游戏吗？</string>
+    <string name="exit_tip">提示</string>
+    <string name="exit_sure">是</string>
+    <string name="exit_cancel">否</string>
+    <string name="icon_loading_tip">png/jpg only</string>
+    <string name="icon_loading_photo">相机</string>
+    <string name="icon_loading_img">图库</string>
+
+</resources>

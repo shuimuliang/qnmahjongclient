@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{76A39BB2-9B84-4C65-98A5-654D86B86F2A}</ProjectGuid>
+    <RootNamespace>test_win32</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\include;$(ProjectDir)..\..\cocos2dx;$(ProjectDir)..\..\cocos2dx\include;$(ProjectDir)..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\cocos2dx\platform\win32;$(ProjectDir)..\..\cocos2dx\platform\third_party\win32;$(ProjectDir)..\..\cocos2dx\platform\third_party\win32\OGLES;$(ProjectDir)..\..\cocos2dx\platform\third_party\win32\zlib;$(ProjectDir)..\..\external;$(ProjectDir)..\..\external\chipmunk\include\chipmunk;$(ProjectDir)..\..\CocosDenshion\include;$(ProjectDir)..\..\extensions;$(ProjectDir)..\..\cocos2dx\platform\third_party\win32\pthread;$(ProjectDir)..\;$(ProjectDir)..\..\scripting\lua\;$(ProjectDir)..\..\scripting\lua\cocos2dx_support\;$(ProjectDir)..\..\scripting\lua\luajit\include;$(ProjectDir)..\..\scripting\lua\tolua;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;COCOS_EASY_PROJECT;SQLITE_HAS_CODEC;CODEC_TYPE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libExtensions.lib;libcocos2d.lib;libCocosDenshion.lib;opengl32.lib;glew32.lib;libBox2d.lib;libchipmunk.lib;libcurl_imp.lib;pthreadVCE2.lib;websockets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy /Y /Q "$(ProjectDir)..\..\external\libwebsockets\win32\lib\*.*" "$(OutDir)"</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\scripting\lua;$(ProjectDir)..\..\scripting\lua\cocos2dx_support;$(ProjectDir)..\..\scripting\lua\luajit\include;$(ProjectDir)..\..\cocos2dx\platform\third_party\win32\zlib;$(ProjectDir)..\..\scripting\lua\tolua;$(ProjectDir)..\..\cocos2dx\platform\third_party\win32\pthread;$(ProjectDir)..\..\cocos2dx;$(ProjectDir)..\..\cocos2dx\include;$(ProjectDir)..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\cocos2dx\platform\win32;$(ProjectDir)..\..\cocos2dx\platform\third_party\win32;$(ProjectDir)..\..\cocos2dx\platform\third_party\win32\OGLES;$(ProjectDir)..\..\external;$(ProjectDir)..\..\external\chipmunk\include\chipmunk;$(ProjectDir)..\..\CocosDenshion\include;$(ProjectDir)..\..\extensions;..\Classes;..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libExtensions.lib;libcocos2d.lib;libCocosDenshion.lib;opengl32.lib;glew32.lib;libBox2d.lib;libchipmunk.lib;libcurl_imp.lib;pthreadVCE2.lib;websockets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy /Y /Q "$(ProjectDir)..\..\external\libwebsockets\win32\lib\*.*" "$(OutDir)"</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\cocos2dx\proj.win32\cocos2d.vcxproj">
+      <Project>{98a51ba8-fc3a-415b-ac8f-8c7bd464e93e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CocosDenshion\proj.win32\CocosDenshion.vcxproj">
+      <Project>{f8edd7fa-9a51-4e80-baeb-860825d2eac6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\extensions\proj.win32\libExtensions.vcxproj">
+      <Project>{21b2c324-891f-48ea-ad1a-5ae13de12e28}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\Box2D\proj.win32\Box2D.vcxproj">
+      <Project>{929480e7-23c0-4df6-8456-096d71547116}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\chipmunk\proj.win32\chipmunk.vcxproj">
+      <Project>{207bc7a9-ccf1-4f2f-a04d-45f72242ae25}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Analysis\Analysis.h" />
+    <ClInclude Include="..\CocosEasy.h" />
+    <ClInclude Include="..\CocosExt\ActionInternalExt.h" />
+    <ClInclude Include="..\CocosExt\ArmatureExt.h" />
+    <ClInclude Include="..\CocosExt\CCLString.h" />
+    <ClInclude Include="..\CocosExt\CCScollPanelViewExt.h" />
+    <ClInclude Include="..\CocosExt\CCScrollViewExt.h" />
+    <ClInclude Include="..\CocosExt\CCWebView.h" />
+    <ClInclude Include="..\CocosExt\HttpRequestExt.h" />
+    <ClInclude Include="..\CocosExt\ImeChatBox.h" />
+    <ClInclude Include="..\CocosExt\RichTextExt.h" />
+    <ClInclude Include="..\CocosExt\DictionaryExt.h" />
+    <ClInclude Include="..\CocosExt\SpriteExt.h" />
+    <ClInclude Include="..\CocosExt\TmxExt.h" />
+    <ClInclude Include="..\CocosExt\UIChoosePersonViewExt.h" />
+    <ClInclude Include="..\CocosExt\UICircleViewBaseExt.h" />
+    <ClInclude Include="..\CocosExt\UICircleViewExt.h" />
+    <ClInclude Include="..\CocosExt\UIPageViewExt.h" />
+    <ClInclude Include="..\CocosExt\UITabViewExt.h" />
+    <ClInclude Include="..\CocosExt\WheelRotateExt.h" />
+    <ClInclude Include="..\CocosExt\WidgetEvent.h" />
+    <ClInclude Include="..\CocosExt\WordTable.h" />
+    <ClInclude Include="..\CocosExt\WStrExt.h" />
+    <ClInclude Include="..\Common\CocosEasyDef.h" />
+    <ClInclude Include="..\Common\CommInclude.h" />
+    <ClInclude Include="..\Graph\DebugDraw.h" />
+    <ClInclude Include="..\Graph\Geometry2D.h" />
+    <ClInclude Include="..\Graph\Graph.h" />
+    <ClInclude Include="..\Model\AsyncSocket.h" />
+    <ClInclude Include="..\Model\CocosEasyManger.h" />
+    <ClInclude Include="..\Model\DBManager.h" />
+    <ClInclude Include="..\Model\DownloadManager.h" />
+    <ClInclude Include="..\Model\ResourceLoader.h" />
+    <ClInclude Include="..\Model\SceneTransit.h" />
+    <ClInclude Include="..\Model\TimerManager.h" />
+    <ClInclude Include="..\Physics\ColliderToolKits.h" />
+    <ClInclude Include="..\Physics\GLES-Render.h" />
+    <ClInclude Include="..\Physics\PhyCharacter.h" />
+    <ClInclude Include="..\Physics\PhysicalWorld.h" />
+    <ClInclude Include="..\Plugin\CocosEasyPlugin.h" />
+    <ClInclude Include="..\Plugin\ImagePicker.h" />
+    <ClInclude Include="..\Script\CELuaEngine.h" />
+    <ClInclude Include="..\Script\LuaCocosEasy.h" />
+    <ClInclude Include="..\Script\Lua_CocosEasy_Manual.h" />
+    <ClInclude Include="..\SDKEasy\SDKConstants.h" />
+    <ClInclude Include="..\SDKEasy\SDKManager.h" />
+    <ClInclude Include="..\Shader\CEGLProgram.h" />
+    <ClInclude Include="..\Shader\ceShader_Motion_Blur_frag.h" />
+    <ClInclude Include="..\Shader\ceShader_PositionTextureColorGrey_frag.h" />
+    <ClInclude Include="..\Shader\ceShader_PositionTextureColorHSL_frag.h" />
+    <ClInclude Include="..\Shader\ceShader_PositionTextureOutline_frag.h" />
+    <ClInclude Include="..\Shader\ceShader_Radial_Blur_frag.h" />
+    <ClInclude Include="..\Utility\base64Easy.h" />
+    <ClInclude Include="..\Utility\DataParser.h" />
+    <ClInclude Include="..\Utility\DB\CppSQLite3.h" />
+    <ClInclude Include="..\Utility\DB\DBRSWrapper.h" />
+    <ClInclude Include="..\Utility\DB\DBTblLoadHelper.h" />
+    <ClInclude Include="..\Utility\DB\sqlite3.h" />
+    <ClInclude Include="..\Utility\DynamicDownload.h" />
+    <ClInclude Include="..\Utility\EventDef.h" />
+    <ClInclude Include="..\Utility\EventManager.h" />
+    <ClInclude Include="..\Utility\GContainer.h" />
+    <ClInclude Include="..\Utility\HTTP\CCHttpDownloadQueueManager.h" />
+    <ClInclude Include="..\Utility\HTTP\CCHttpRequestQueueManager.h" />
+    <ClInclude Include="..\Utility\IFL.h" />
+    <ClInclude Include="..\Utility\Log.h" />
+    <ClInclude Include="..\Utility\MVC\CCFacade.h" />
+    <ClInclude Include="..\Utility\MVC\CCIModule.h" />
+    <ClInclude Include="..\Utility\MVC\CCModuleManager.h" />
+    <ClInclude Include="..\Utility\MVC\CCNetFacade.h" />
+    <ClInclude Include="..\Utility\MVC\core\Controller.h" />
+    <ClInclude Include="..\Utility\MVC\core\Facade.h" />
+    <ClInclude Include="..\Utility\MVC\core\Modele.h" />
+    <ClInclude Include="..\Utility\MVC\core\Observer.h" />
+    <ClInclude Include="..\Utility\MVC\core\View.h" />
+    <ClInclude Include="..\Utility\MVC\interface\ICommand.h" />
+    <ClInclude Include="..\Utility\MVC\interface\IController.h" />
+    <ClInclude Include="..\Utility\MVC\interface\IMediator.h" />
+    <ClInclude Include="..\Utility\MVC\interface\INotification.h" />
+    <ClInclude Include="..\Utility\MVC\interface\IProxy.h" />
+    <ClInclude Include="..\Utility\MVC\interface\ISend.h" />
+    <ClInclude Include="..\Utility\MVC\Model\DispatchCommand.h" />
+    <ClInclude Include="..\Utility\MVC\Mvc.h" />
+    <ClInclude Include="..\Utility\MVC\pattern\obsever\Notification.h" />
+    <ClInclude Include="..\Utility\oi_tea.h" />
+    <ClInclude Include="..\Utility\Single.h" />
+    <ClInclude Include="..\Utility\Socket\ClientSocket.h" />
+    <ClInclude Include="..\Utility\Socket\ISocket.h" />
+    <ClInclude Include="..\Utility\ThreadPool\CCMutex.h" />
+    <ClInclude Include="..\Utility\ThreadPool\CCPThread.h" />
+    <ClInclude Include="..\Utility\ThreadPool\CCRunable.h" />
+    <ClInclude Include="..\Utility\ThreadPool\CCSem.h" />
+    <ClInclude Include="..\Utility\ThreadPool\CCThreadPool.h" />
+    <ClInclude Include="..\Utility\UploadManager.h" />
+    <ClInclude Include="..\Utility\Utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Analysis\Analysis.cpp" />
+    <ClCompile Include="..\Analysis\win32\AnalysisImpl.cpp" />
+    <ClCompile Include="..\CocosExt\ActionInternalExt.cpp" />
+    <ClCompile Include="..\CocosExt\ArmatureExt.cpp" />
+    <ClCompile Include="..\CocosExt\CCScollPanelViewExt.cpp" />
+    <ClCompile Include="..\CocosExt\CCScrollViewExt.cpp" />
+    <ClCompile Include="..\CocosExt\HttpRequestExt.cpp" />
+    <ClCompile Include="..\CocosExt\ImeChatBox.cpp" />
+    <ClCompile Include="..\CocosExt\RichTextExt.cpp" />
+    <ClCompile Include="..\CocosExt\SpriteExt.cpp" />
+    <ClCompile Include="..\CocosExt\TmxExt.cpp" />
+    <ClCompile Include="..\CocosExt\UIChoosePersonViewExt.cpp" />
+    <ClCompile Include="..\CocosExt\UICircleViewBaseExt.cpp" />
+    <ClCompile Include="..\CocosExt\UICircleViewExt.cpp" />
+    <ClCompile Include="..\CocosExt\UIPageViewExt.cpp" />
+    <ClCompile Include="..\CocosExt\UITabViewExt.cpp" />
+    <ClCompile Include="..\CocosExt\WheelRotateExt.cpp" />
+    <ClCompile Include="..\CocosExt\win32\CCWebView.cpp" />
+    <ClCompile Include="..\CocosExt\WordTable.cpp" />
+    <ClCompile Include="..\CocosExt\WStrExt.cpp" />
+    <ClCompile Include="..\Common\CommInclude.cpp" />
+    <ClCompile Include="..\Graph\DebugDraw.cpp" />
+    <ClCompile Include="..\Graph\Geometry2D.cpp" />
+    <ClCompile Include="..\Graph\Graph.cpp" />
+    <ClCompile Include="..\Model\AsyncSocket.cpp" />
+    <ClCompile Include="..\Model\CocosEasyManger.cpp" />
+    <ClCompile Include="..\Model\DBManager.cpp" />
+    <ClCompile Include="..\Model\DownloadManager.cpp" />
+    <ClCompile Include="..\Model\ResourceLoader.cpp" />
+    <ClCompile Include="..\Model\SceneTransit.cpp" />
+    <ClCompile Include="..\Model\TimerManager.cpp" />
+    <ClCompile Include="..\Physics\ColliderToolKits.cpp" />
+    <ClCompile Include="..\Physics\GLES-Render.cpp" />
+    <ClCompile Include="..\Physics\PhyCharacter.cpp" />
+    <ClCompile Include="..\Physics\PhysicalWorld.cpp" />
+    <ClCompile Include="..\Plugin\ImagePicker.cpp" />
+    <ClCompile Include="..\Plugin\win32\CocosEasyPlugin.cpp" />
+    <ClCompile Include="..\Plugin\win32\winImagePicker.cpp" />
+    <ClCompile Include="..\Script\CELuaEngine.cpp" />
+    <ClCompile Include="..\Script\LuaCocosEasy.cpp" />
+    <ClCompile Include="..\Script\Lua_CocosEasy_Manual.cpp" />
+    <ClCompile Include="..\SDKEasy\SDKConstants.cpp" />
+    <ClCompile Include="..\SDKEasy\SDKManager.cpp" />
+    <ClCompile Include="..\SDKEasy\win32\SDKImpl.cpp" />
+    <ClCompile Include="..\Shader\CEGLProgram.cpp" />
+    <ClCompile Include="..\Utility\base64Easy.cpp" />
+    <ClCompile Include="..\Utility\DataParser.cpp" />
+    <ClCompile Include="..\Utility\DB\CppSQLite3.cpp" />
+    <ClCompile Include="..\Utility\DB\DBRSWrapper.cpp" />
+    <ClCompile Include="..\Utility\DB\DBTblLoadHelper.cpp" />
+    <ClCompile Include="..\Utility\DynamicDownload.cpp" />
+    <ClCompile Include="..\Utility\EventManager.cpp" />
+    <ClCompile Include="..\Utility\HTTP\CCHttpDownloadQueueManager.cpp" />
+    <ClCompile Include="..\Utility\HTTP\CCHttpRequestQueueManager.cpp" />
+    <ClCompile Include="..\Utility\IFL.cpp" />
+    <ClCompile Include="..\Utility\Log.cpp" />
+    <ClCompile Include="..\Utility\MVC\CCFacade.cpp" />
+    <ClCompile Include="..\Utility\MVC\CCIModule.cpp" />
+    <ClCompile Include="..\Utility\MVC\CCModuleManager.cpp" />
+    <ClCompile Include="..\Utility\MVC\CCNetFacade.cpp" />
+    <ClCompile Include="..\Utility\MVC\core\Controller.cpp" />
+    <ClCompile Include="..\Utility\MVC\core\Facade.cpp" />
+    <ClCompile Include="..\Utility\MVC\core\Modele.cpp" />
+    <ClCompile Include="..\Utility\MVC\core\Observer.cpp" />
+    <ClCompile Include="..\Utility\MVC\core\View.cpp" />
+    <ClCompile Include="..\Utility\MVC\interface\ICommand.cpp" />
+    <ClCompile Include="..\Utility\MVC\interface\IController.cpp" />
+    <ClCompile Include="..\Utility\MVC\interface\IMediator.cpp" />
+    <ClCompile Include="..\Utility\MVC\interface\INotification.cpp" />
+    <ClCompile Include="..\Utility\MVC\interface\IProxy.cpp" />
+    <ClCompile Include="..\Utility\MVC\interface\ISend.cpp" />
+    <ClCompile Include="..\Utility\MVC\Model\DispatchCommand.cpp" />
+    <ClCompile Include="..\Utility\MVC\pattern\obsever\Notification.cpp" />
+    <ClCompile Include="..\Utility\oi_tea.c" />
+    <ClCompile Include="..\Utility\Socket\ClientSocket.cpp" />
+    <ClCompile Include="..\Utility\Socket\ISocket.cpp" />
+    <ClCompile Include="..\Utility\ThreadPool\CCMutex.cpp" />
+    <ClCompile Include="..\Utility\ThreadPool\CCPThread.cpp" />
+    <ClCompile Include="..\Utility\ThreadPool\CCSem.cpp" />
+    <ClCompile Include="..\Utility\ThreadPool\CCThreadPool.cpp" />
+    <ClCompile Include="..\Utility\UploadManager.cpp" />
+    <ClCompile Include="..\Utility\Utils.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

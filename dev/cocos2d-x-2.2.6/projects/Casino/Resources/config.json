@@ -1,0 +1,9 @@
+{
+    "innner_version": "000012000",
+    "show_version": "v1.2.0",
+    "version_server_ip": "http://yourpath:5003/check_version",
+    "temp":"",
+    "reserve_ip":" ",
+    "iappay_path": "http://yourpath:5004",
+    "storageType": "qiniu"
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">街機電玩大師</string>
+    <string name="exit_ask">您確定要退出嗎？</string>
+    <string name="exit_tip">提示</string>
+    <string name="exit_sure">確定</string>
+    <string name="exit_cancel">取消</string>
+    <string name="icon_loading_tip">上傳的圖片僅支持png或jpg格式</string>
+    <string name="icon_loading_photo">相機</string>
+    <string name="icon_loading_img">圖片</string>
+
+</resources>

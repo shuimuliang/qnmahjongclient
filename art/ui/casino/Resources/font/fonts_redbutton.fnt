@@ -1,0 +1,20 @@
+info face="fonts_redbutton" size=32 bold=0 italic=0 charset="" unicode=0 stretchH=100 smooth=1 aa=1 padding=0,0,0,0 spacing=1,1
+common lineHeight=36 base=26 scaleW=131 scaleH=104 pages=1 packed=0 alphaChnl=1 redChnl=0 greenChnl=0 blueChnl=0
+page id=0 file="fonts_redbutton.png"
+chars count=14
+char id=20030 x=0 y=0 width=33 height=34 xoffset=0 yoffset=2 xadvance=29 page=0 chnl=0 letter="举"
+char id=25253 x=66 y=69 width=32 height=34 xoffset=0 yoffset=2 xadvance=28 page=0 chnl=0 letter="报"
+char id=21024 x=67 y=0 width=31 height=33 xoffset=0 yoffset=2 xadvance=27 page=0 chnl=0 letter="删"
+char id=38500 x=99 y=35 width=31 height=34 xoffset=0 yoffset=2 xadvance=27 page=0 chnl=0 letter="除"
+char id=22909 x=34 y=0 width=32 height=33 xoffset=0 yoffset=2 xadvance=28 page=0 chnl=0 letter="好"
+char id=21451 x=66 y=34 width=32 height=34 xoffset=0 yoffset=2 xadvance=28 page=0 chnl=0 letter="友"
+char id=25298 x=0 y=68 width=32 height=33 xoffset=0 yoffset=2 xadvance=28 page=0 chnl=0 letter="拒"
+char id=32477 x=33 y=68 width=32 height=33 xoffset=0 yoffset=2 xadvance=28 page=0 chnl=0 letter="绝"
+char id=31435 x=33 y=35 width=32 height=32 xoffset=0 yoffset=2 xadvance=28 page=0 chnl=0 letter="立"
+char id=21363 x=99 y=70 width=30 height=33 xoffset=0 yoffset=3 xadvance=26 page=0 chnl=0 letter="即"
+char id=31163 x=99 y=0 width=31 height=34 xoffset=0 yoffset=2 xadvance=27 page=0 chnl=0 letter="离"
+char id=24320 x=0 y=35 width=32 height=32 xoffset=0 yoffset=4 xadvance=28 page=0 chnl=0 letter="开"
+char id=32 x=0 y=0 width=0 height=0 xoffset=0 yoffset=0 xadvance=22 page=0 chnl=0 letter=" "
+char id=9 x=0 y=0 width=0 height=0 xoffset=0 yoffset=0 xadvance=176 page=0 chnl=0 letter="	"
+
+kernings count=0

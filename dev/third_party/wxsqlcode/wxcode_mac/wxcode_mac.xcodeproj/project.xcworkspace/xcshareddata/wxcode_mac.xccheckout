@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F8A12831-C6CC-479A-AF7A-FAAECB1754AD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>wxcode_mac</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>96DF6B6B-DFD0-4D01-8CF0-413DA6B54B6D</key>
+		<string>ssh://42.62.77.86//data/repo/thclient.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>third_party/wxsqlcode/wxcode_mac/wxcode_mac.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>96DF6B6B-DFD0-4D01-8CF0-413DA6B54B6D</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://42.62.77.86//data/repo/thclient.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>96DF6B6B-DFD0-4D01-8CF0-413DA6B54B6D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>96DF6B6B-DFD0-4D01-8CF0-413DA6B54B6D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>wxcode_mac</string>
+		</dict>
+	</array>
+</dict>
+</plist>

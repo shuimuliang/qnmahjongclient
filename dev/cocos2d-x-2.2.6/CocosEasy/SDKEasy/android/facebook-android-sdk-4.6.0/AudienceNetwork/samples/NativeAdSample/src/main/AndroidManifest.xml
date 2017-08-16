@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.facebook.samples.NativeAdSample">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
+        <activity android:name="NativeAdSampleActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="NativeAdListActivity" />
+        <activity android:name="NativeAdHscrollActivity" android:screenOrientation="portrait" />
+        <activity android:name="NativeAdTemplateActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.facebook.ads.NativeAdVideoActivity"
+                  android:configChanges="keyboardHidden|orientation|screenSize" />
+        <!-- Apps targeting api v13 and higher should add '|screenSize' to the InterstitialAdActivity configChanges to support video rotation -->
+    </application>
+</manifest> 

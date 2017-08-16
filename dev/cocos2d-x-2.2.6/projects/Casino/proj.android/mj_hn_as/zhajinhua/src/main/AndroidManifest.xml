@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.snowcat.hnmj"
+    android:installLocation="auto"
+    android:versionCode="100200000"
+    android:versionName="1.2.0" >
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+     
+    <!-- talkingdata  -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+
+	<!-- bugly  -->
+	￼<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.READ_LOGS" />
+	<!-- bugly  -->
+
+    <!-- gvoice-->
+    ￼<uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    ￼<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <!-- gvoice-->
+
+    <!--获得经纬度权限-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--获得经纬度权限-->
+
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="10" />
+
+    <uses-feature android:glEsVersion="0x00020000" />
+
+    <application
+        android:icon="@drawable/zjhicon"
+        android:name="com.snowcat.casino.MyApplication"
+        tools:replace="android:icon"
+        android:label="@string/app_name_zhajinhua" >
+        <activity
+            android:name="com.snowcat.casino.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name_zhajinhua"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name="com.snowcat.casino.Casino"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name_zhajinhua"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+
+
+        <!-- wchat -->
+            <activity
+                android:name=".wxapi.WXEntryActivity"
+                android:label="@string/app_name_zhajinhua"
+                android:exported="true"/>
+        <!-- wchat -->
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="nBSm1aG3GOyjLvra9vetmYyqbkMIUje0" />
+
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote">
+        </service>
+
+    </application>
+
+
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+</manifest>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== 
+     2014年5月22日 下午5:40:32                                                        
+
+     NDK    
+     description
+     
+                   
+     zz                                                                
+     ====================================================================== -->
+<project name="NDK" default="BuildAllHeader">
+	<description>
+            description
+    </description>
+
+	<!-- ================================= 
+          target: BuildAllHeader              
+         ================================= -->
+	<target name="BuildAllHeader">
+		<antcall target="BuildMethodOneHearder">
+		</antcall>
+		<antcall taskname="BuildMethodTwoHearder">
+		</antcall>
+	</target>
+
+	<!-- - - - - - - - - - - - - - - - - - 
+          target: depends                      
+         - - - - - - - - - - - - - - - - - -->
+	<target name="BuildMethodOneHearder">
+		<javah destdir="./" classpath="./bin/classes/" class="com.zerogame.sdkeasylibs.SDKObjectBase">
+		</javah>
+	</target>
+	<target name="BuildMethodTwoHearder">
+	</target>
+
+</project>

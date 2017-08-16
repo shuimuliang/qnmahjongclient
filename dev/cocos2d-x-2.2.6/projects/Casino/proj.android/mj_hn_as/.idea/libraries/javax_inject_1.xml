@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="javax.inject-1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/zhajinhua/libs/javax.inject-1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

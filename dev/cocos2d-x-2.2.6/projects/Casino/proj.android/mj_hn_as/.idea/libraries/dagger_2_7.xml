@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="dagger-2.7">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/zhajinhua/libs/dagger-2.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name"> كازينو الحظ</string>
+    <string name="exit_ask">أنت متأكد من الخروج؟?</string>
+    <string name="exit_tip">نصائح </string>
+    <string name="exit_sure">حسنا </string>
+    <string name="exit_cancel">إلغاء </string>
+    <string name="icon_loading_tip">png/jpg فقط</string>
+    <string name="icon_loading_photo">كاميرا</string>
+    <string name="icon_loading_img">صورة</string>
+
+</resources>

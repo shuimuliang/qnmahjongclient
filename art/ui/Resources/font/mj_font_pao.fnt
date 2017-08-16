@@ -1,0 +1,10 @@
+info face="mj_font_pao_0" size=18 bold=0 italic=0 charset="" unicode=1 stretchH=100 smooth=1 aa=1 padding=0,0,0,0 spacing=0,0 outline=0
+common lineHeight=18 base=15 scaleW=100 scaleH=30 pages=1 packed=0 alphaChnl=0 redChnl=0 greenChnl=0 blueChnl=0
+page id=0 file="mj_font_pao_0.png"
+chars count=6
+char id=48   x=24    y=0     width=15    height=19    xoffset=0     yoffset=0     xadvance=15    page=0  chnl=15
+char id=49   x=67    y=0     width=11    height=19    xoffset=0     yoffset=0     xadvance=11    page=0  chnl=15
+char id=50   x=39    y=0     width=14    height=19    xoffset=0     yoffset=0     xadvance=14    page=0  chnl=15
+char id=51   x=53    y=0     width=14    height=19    xoffset=0     yoffset=0     xadvance=14    page=0  chnl=15
+char id=120  x=78    y=0     width=14    height=15    xoffset=0     yoffset=0     xadvance=14    page=0  chnl=15
+char id=36305 x=0     y=0     width=24    height=23    xoffset=0     yoffset=0     xadvance=24    page=0  chnl=15

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lucky Casino Master</string>
+    <string name="exit_ask">Are you sure to exit ？</string>
+    <string name="exit_tip">Tip</string>
+    <string name="exit_sure">Yes</string>
+    <string name="exit_cancel">No</string>
+    <string name="icon_loading_tip">png/jpg only</string>
+    <string name="icon_loading_photo">camera</string>
+    <string name="icon_loading_img">image</string>
+
+</resources>

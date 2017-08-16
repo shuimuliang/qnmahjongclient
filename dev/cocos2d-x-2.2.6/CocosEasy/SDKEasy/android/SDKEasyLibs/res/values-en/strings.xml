@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="exit_ask">Are you sure to exit ？</string>
+    <string name="exit_tip">Tip</string>
+    <string name="exit_sure">Yes</string>
+    <string name="exit_cancel">No</string>
+</resources>

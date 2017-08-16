@@ -1,0 +1,123 @@
+--[[
+Load a mo file, retuan a lua function or table.
+A sample and description(in chinese): http://zengrong.net/post/1986.htm
+
+@see http://lua-users.org/lists/lua-l/2010-04/msg00005.html
+Modifier zrong(zengrong.net)
+Creation 2013-11-29
+Last Modification 2015-01-25
+
+usage:
+
+	local Gettext = require("utils.Gettext")
+
+	-- use lua io, cannot use in Android
+    local fd,err=io.open("main.mo","rb")
+    if not fd then return nil,err end
+    local raw_data=fd:read("*all")
+    fd:close()
+
+    local mo_data=assert(Gettext.parseData(raw_data))
+    print(mo_data["hello"])
+	-- 你好
+    print(mo_data["world"])
+	-- nil
+
+	-- then you'll get a kind of gettext function:
+    local gettext= Gettext.gettext(raw_data)
+    print(gettext("hello"))
+    -- 你好
+    print(gettext("world"))
+    -- world
+
+	-- with a slight modification this will be ready-to-use for the xgettext tool:
+
+    _ = Gettext.gettext(raw_data)
+    print(_("hello"))
+    print(_("world"))
+]]
+
+-- Original description
+-----------------------------------------------------------
+-- load an mo file and return a lua table
+-- @param mo_file name of the file to load
+-- @return table on success
+-- @return nil,string on failure
+-- @copyright J.J?rgen von Bargen
+-- @licence I provide this as public domain
+-- @see http://www.gnu.org/software/hello/manual/gettext/MO-Files.html
+-----------------------------------------------------------
+
+local Gettext = {}
+
+function Gettext.gettext(mo_data)
+	local hash = Gettext.parseData(mo_data)
+    return function(text)
+        return hash[text] or text
+    end
+end
+
+function Gettext.gettextFromFile(file)
+	if isFileExist(file) then
+		local raw_data = CCFileUtils:sharedFileUtils():getFileData(file, "rb")
+		return Gettext.gettext(raw_data)
+	else
+		return function(__text)
+			return __text
+		end
+	end
+end
+
+function Gettext.parseData(mo_data)
+    --------------------------------
+    -- precache some functions
+    --------------------------------
+    local byte=string.byte
+    local sub=string.sub
+
+    --------------------------------
+    -- check format
+    --------------------------------
+    local peek_long --localize
+    local magic=sub(mo_data,1,4)
+    -- intel magic 0xde120495
+    if magic=="\222\018\004\149" then
+        peek_long=function(offs)
+            local a,b,c,d=byte(mo_data,offs+1,offs+4)
+            return ((d*256+c)*256+b)*256+a
+        end
+    -- motorola magic = 0x950412de
+    elseif magic=="\149\004\018\222" then
+        peek_long=function(offs)
+            local a,b,c,d=byte(mo_data,offs+1,offs+4)
+            return ((a*256+b)*256+c)*256+d
+        end
+    else
+        return nil,"no valid mo-file"
+    end
+
+    --------------------------------
+    -- version
+    --------------------------------
+    local V=peek_long(4)
+    if V~=0 then
+        return nul,"unsupported version"
+    end
+
+    ------------------------------
+    -- get number of offsets of table
+    ------------------------------
+    local N,O,T=peek_long(8),peek_long(12),peek_long(16)
+    ------------------------------
+    -- traverse and get strings
+    ------------------------------
+    local hash={}
+    for nstr=1,N do
+        local ol,oo=peek_long(O),peek_long(O+4) O=O+8
+        local tl,to=peek_long(T),peek_long(T+4) T=T+8
+        hash[sub(mo_data,oo+1,oo+ol)]=sub(mo_data,to+1,to+tl)
+    end
+    return hash    -- return table
+end
+
+return Gettext

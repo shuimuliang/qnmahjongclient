@@ -1,0 +1,4 @@
+include ':libcocos2dx'
+include ':pluginLibs'
+include ':sDKEasyLibs'
+include ':zhajinhua'

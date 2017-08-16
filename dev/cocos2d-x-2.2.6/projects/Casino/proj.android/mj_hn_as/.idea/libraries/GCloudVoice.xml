@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="GCloudVoice">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/zhajinhua/libs/GCloudVoice.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

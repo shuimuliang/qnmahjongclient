@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2011-12-08 16:25:34.062.pas,d:\我的文档\RAD Studio\Projects\Unit1.pas=C:\Documents and Settings\Administrator\桌面\psw\frm_main.pas</Transaction>
+    <Transaction>2011-12-08 16:25:34.062.dfm,d:\我的文档\RAD Studio\Projects\Unit1.dfm=C:\Documents and Settings\Administrator\桌面\psw\frm_main.dfm</Transaction>
+    <Transaction>2011-12-08 16:26:13.890.bdsproj,d:\我的文档\RAD Studio\Projects\Project1.bdsproj=C:\Documents and Settings\Administrator\桌面\psw\SqlitePsw.bdsproj</Transaction>
+    <Transaction>2011-12-08 16:26:40.828.bdsproj,C:\Documents and Settings\Administrator\桌面\psw\SqlitePsw.bdsproj=C:\Documents and Settings\Administrator\桌面\psw\SqlitePwd.bdsproj</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>centeredOrigin</key>
+	<false/>
+	<key>currentResolution</key>
+	<integer>0</integer>
+	<key>currentSequenceId</key>
+	<integer>0</integer>
+	<key>fileType</key>
+	<string>CocosBuilder</string>
+	<key>fileVersion</key>
+	<integer>4</integer>
+	<key>guides</key>
+	<array/>
+	<key>jsControlled</key>
+	<true/>
+	<key>nodeGraph</key>
+	<dict>
+		<key>baseClass</key>
+		<string>CCLayer</string>
+		<key>children</key>
+		<array>
+			<dict>
+				<key>baseClass</key>
+				<string>CCLabelTTF</string>
+				<key>children</key>
+				<array/>
+				<key>customClass</key>
+				<string></string>
+				<key>displayName</key>
+				<string>CCLabelTTF</string>
+				<key>memberVarAssignmentName</key>
+				<string></string>
+				<key>memberVarAssignmentType</key>
+				<integer>0</integer>
+				<key>properties</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>position</string>
+						<key>type</key>
+						<string>Position</string>
+						<key>value</key>
+						<array>
+							<real>50</real>
+							<real>100</real>
+							<integer>4</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>anchorPoint</string>
+						<key>type</key>
+						<string>Point</string>
+						<key>value</key>
+						<array>
+							<real>0.5</real>
+							<real>1</real>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>scale</string>
+						<key>type</key>
+						<string>ScaleLock</string>
+						<key>value</key>
+						<array>
+							<real>1</real>
+							<real>1</real>
+							<false/>
+							<integer>0</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>ignoreAnchorPointForPosition</string>
+						<key>type</key>
+						<string>Check</string>
+						<key>value</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>fontName</string>
+						<key>type</key>
+						<string>FontTTF</string>
+						<key>value</key>
+						<string>Helvetica</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>fontSize</string>
+						<key>type</key>
+						<string>FloatScale</string>
+						<key>value</key>
+						<array>
+							<real>24</real>
+							<integer>0</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>color</string>
+						<key>type</key>
+						<string>Color3</string>
+						<key>value</key>
+						<array>
+							<integer>107</integer>
+							<integer>53</integer>
+							<integer>0</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>dimensions</string>
+						<key>type</key>
+						<string>Size</string>
+						<key>value</key>
+						<array>
+							<real>100</real>
+							<real>100</real>
+							<integer>1</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>horizontalAlignment</string>
+						<key>type</key>
+						<string>IntegerLabeled</string>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>verticalAlignment</string>
+						<key>type</key>
+						<string>IntegerLabeled</string>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>string</string>
+						<key>type</key>
+						<string>Text</string>
+						<key>value</key>
+						<string>一、牌数：  
+基本牌数136张，包括：  
+万牌 1～9 各4张 共36张  
+条牌 1～9 各4张 共36张  
+筒牌 1～9 各4张 共36张  
+字牌 东南西北中发白 各4张 共28张
+
+二、打牌：
+可以碰、吃、杠。
+庄家：由创建房间的玩家担任第一把的庄家，其他人按照加入房间的顺序，依次落座。之后，闲家胡牌，逆时针庄家的下一 家当庄家。出现黄庄的情况，由当前庄家继续当庄。出现一炮 多响的时候，按点炮者逆时针顺序，第一家胡牌的当庄。
+
+三、胡牌牌型：
+胡牌为4笔牌+1对将，111为刻子或者杠，123为顺子，11为将牌，满足以下任意牌型即可胡牌。
+  (1)  111，111，111，111，11
+  (2)  111，111，111，123，11
+  (3)  111，111，123，123，11
+  (4)  111，123，123，123，11
+  (5)  123，123，123，123，11
+  (6)  11，11，11，11，11，11，11
+  (7)  19万，19筒，19条，东南西北中发白+以上任意一张
+
+四、特殊玩法：
+带混儿：混儿牌可以替代任何牌，不能组合其他牌进行吃碰杠。玩家抓完牌后，庄家翻出下一张牌，此张牌的数字加一，为混儿牌。
+带风牌：勾选后牌组中包含东南西北风和中发白牌。
+可吃牌：上家出的牌与自己手中的牌能组成顺子时可选择吃此张牌。
+黄庄黄杠：流局不计算杠分
+
+五、加分牌型：
+七对：由七个对子组成的牌。
+碰碰胡：由4个刻子或杠牌组成的胡牌牌型。
+清一色：所有牌由同一个花色组成。
+清风：全部由风牌组成的牌型。
+一条龙：胡牌时有同一种花色的1~9的牌。
+豪华七对：由七个对子组成，其中4张牌为相同牌。
+超级豪华七对：由七个对子组成，其中有2组4张相同的牌。
+至尊超级豪华七对：由七个对子组成，其中有3组4张相同的牌。
+十三幺：19万，19筒，19条，东南西北中发白+以上任意一张。
+
+六、额外加分：
+门清：胡牌时，没有吃碰杠过。
+边：胡牌时，为12胡3，或者89胡7。
+卡：胡牌时，胡顺子中间的那张牌，如46胡5。
+吊：胡牌时，单吊将胡牌。
+杠上开花：开杠之后，补的牌正好是胡牌。
+海底捞月：抓牌墙最后一张牌胡牌。
+捉五魁：胡牌时，有4万6万，胡卡5万。
+素胡：胡牌时没有混。
+混儿吊：自摸胡牌时，为混单吊的情况胡牌。（可以胡任意一张牌）
+带庄闲：庄家输赢都有加成。
+自摸：自己摸到可以使自己胡的牌。
+
+七、胡牌方式：
+自摸：通过自己抓牌，凑成胡牌牌型，而胡牌。
+点炮可胡：别人打牌，自己拿到这张牌，可以接别人打出的牌胡牌，叫吃炮胡。打牌人的行为，叫点炮。可一炮多响。
+
+八、结算方式：
+点炮一家出：只点炮者出分给赢家，其他两家不需要出分。
+点炮三家出：点炮者出分给赢家，另外两家也需出分给赢家，但点炮者须多出分。
+点炮大包：点炮者出3倍的分数给赢家，其他两家不输分。
+
+九、算分规则：
+每满足一个加分项，基础分数*相应加分项应乘的倍数
+基础分数为1分
+加分项：
+门清，分数*2；
+边，分数*2；
+卡，分数*2；
+吊，分数*2；
+素胡，分数*2；
+混儿吊，分数*2；（不再计算吊）
+带庄闲，庄家输赢分数*2；
+自摸，分数*2；
+捉五魁，分数*4；（不再计算卡）
+清一色，分数*2；
+碰碰胡，分数*2；
+清风，分数*2；
+一条龙，分数*2；
+七对，分数*2；
+豪华七对，分数*4；（不再计算七对）
+超级豪华七对，分数*8；（不再计算七对、豪华七对）
+至尊豪华七对，分数*16；（不再计算七对、豪华七对、超级豪华七对）
+十三幺，分数*10
+杠上开花胡牌，分数*2
+海底捞月胡牌，分数*2
+如果选择了“点炮三家出”，则点炮多出1倍的分数。
+杠分计算：
+明杠：点杠的人出三分给杠牌者。
+补杠：其余三家每人出1分给杠牌者。
+暗杠：其余三家每人出2分给杠牌者。</string>
+					</dict>
+				</array>
+				<key>selected</key>
+				<true/>
+			</dict>
+		</array>
+		<key>customClass</key>
+		<string></string>
+		<key>displayName</key>
+		<string>CCLayer</string>
+		<key>memberVarAssignmentName</key>
+		<string></string>
+		<key>memberVarAssignmentType</key>
+		<integer>0</integer>
+		<key>properties</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>contentSize</string>
+				<key>type</key>
+				<string>Size</string>
+				<key>value</key>
+				<array>
+					<real>700</real>
+					<real>3070</real>
+					<integer>0</integer>
+				</array>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>anchorPoint</string>
+				<key>type</key>
+				<string>Point</string>
+				<key>value</key>
+				<array>
+					<real>0.5</real>
+					<real>1</real>
+				</array>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>scale</string>
+				<key>type</key>
+				<string>ScaleLock</string>
+				<key>value</key>
+				<array>
+					<real>1</real>
+					<real>1</real>
+					<false/>
+					<integer>0</integer>
+				</array>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>ignoreAnchorPointForPosition</string>
+				<key>type</key>
+				<string>Check</string>
+				<key>value</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>touchEnabled</string>
+				<key>platform</key>
+				<string>iOS</string>
+				<key>type</key>
+				<string>Check</string>
+				<key>value</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>accelerometerEnabled</string>
+				<key>platform</key>
+				<string>iOS</string>
+				<key>type</key>
+				<string>Check</string>
+				<key>value</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>mouseEnabled</string>
+				<key>platform</key>
+				<string>Mac</string>
+				<key>type</key>
+				<string>Check</string>
+				<key>value</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>keyboardEnabled</string>
+				<key>platform</key>
+				<string>Mac</string>
+				<key>type</key>
+				<string>Check</string>
+				<key>value</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>notes</key>
+	<array/>
+	<key>resolutions</key>
+	<array>
+		<dict>
+			<key>centeredOrigin</key>
+			<false/>
+			<key>ext</key>
+			<string> </string>
+			<key>height</key>
+			<integer>440</integer>
+			<key>name</key>
+			<string>Custom</string>
+			<key>scale</key>
+			<real>1</real>
+			<key>width</key>
+			<integer>700</integer>
+		</dict>
+	</array>
+	<key>sequences</key>
+	<array>
+		<dict>
+			<key>autoPlay</key>
+			<true/>
+			<key>callbackChannel</key>
+			<dict>
+				<key>keyframes</key>
+				<array/>
+				<key>type</key>
+				<integer>10</integer>
+			</dict>
+			<key>chainedSequenceId</key>
+			<integer>-1</integer>
+			<key>length</key>
+			<real>10</real>
+			<key>name</key>
+			<string>Default Timeline</string>
+			<key>offset</key>
+			<real>0.0</real>
+			<key>position</key>
+			<real>0.0</real>
+			<key>resolution</key>
+			<real>30</real>
+			<key>scale</key>
+			<real>128</real>
+			<key>sequenceId</key>
+			<integer>0</integer>
+			<key>soundChannel</key>
+			<dict>
+				<key>keyframes</key>
+				<array/>
+				<key>type</key>
+				<integer>9</integer>
+			</dict>
+		</dict>
+	</array>
+	<key>stageBorder</key>
+	<integer>3</integer>
+</dict>
+</plist>

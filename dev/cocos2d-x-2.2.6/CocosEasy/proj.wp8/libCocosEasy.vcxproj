@@ -1,0 +1,459 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{69CC4CCC-1949-474C-93B1-8FB64749703E}</ProjectGuid>
+    <RootNamespace>libCocosEasy</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <XapOutputs>true</XapOutputs>
+    <XapFilename>libCocosEasy_$(Configuration)_$(Platform).xap</XapFilename>
+    <WinMDAssembly>true</WinMDAssembly>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)WP8\$(Platform)\$(Configuration)\</OutDir>
+    <TargetExt>.lib</TargetExt>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)WP8\$(Platform)\$(Configuration)\</OutDir>
+    <TargetExt>.lib</TargetExt>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)WP8\$(Platform)\$(Configuration)\</OutDir>
+    <ExtensionsToDeleteOnClean>*.cdf;*.cache;*.obj;*.ilk;*.resources;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.meta;*.tlog;*.manifest;*.res;*.pch;*.exp;*.idb;*.rep;*.xdc;*.pdb;*_manifest.rc;*.bsc;*.sbr;*.xml;*.metagen;*.bi</ExtensionsToDeleteOnClean>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)WP8\$(Platform)\$(Configuration)\</OutDir>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>PSAPI_VERSION=2;WP8;_WP8;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;ENV_WP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\Classes;$(ProjectDir)..\..\cocos2dx;$(ProjectDir)..\..\cocos2dx\include;$(ProjectDir)..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\cocos2dx\platform\wp8;$(ProjectDir)..\..\cocos2dx\platform\winrt;$(ProjectDir)..\..\cocos2dx\platform;$(ProjectDir)..\..\cocos2dx\platform\third_party;$(ProjectDir)..\..\cocos2dx\platform\third_party\wp8;$(ProjectDir)..\..\cocos2dx\platform\third_party\wp8\zlib;$(ProjectDir)..\..\cocos2dx\platform\third_party\wp8\pthread;$(ProjectDir)..\..\cocos2dx\platform\third_party\wp8\libcurl;$(ProjectDir)..\..\cocos2dx\platform\third_party\wp8\libcurl\curl;$(ProjectDir)..\..\cocos2dx\platform\third_party\winrt\angleproject\include;$(ProjectDir)..\..\cocos2dx\platform\third_party\winrt\angleproject\samples\gles2_book\Common;$(ProjectDir)..\..\external;$(ProjectDir)..\..\external\emscripten\system\include;$(ProjectDir)..\..\external\chipmunk\include\chipmunk;$(ProjectDir)..\..\CocosDenshion\include;$(ProjectDir)..\..\extensions;$(ProjectDir)..\..\cocos2dx\platform\third_party\winrt\angle\include\EGL;$(ProjectDir)..\..\cocos2dx\platform\third_party\winrt\angle\include\gles2;$(ProjectDir)..\..\cocos2dx\platform\third_party\winrt\angle\include\glslang;$(ProjectDir)..\..\cocos2dx\platform\third_party\winrt\angle\include\khr;$(ProjectDir)..\..\cocos2dx\platform\third_party\winrt\angle\include;..;$(ProjectDir)..\;$(ProjectDir)..\..\scripting\lua\lua;$(ProjectDir)..\..\scripting\lua\cocos2dx_support\;$(ProjectDir)..\..\scripting\lua\tolua;$(ProjectDir)..\..\scripting\lua\;$(ProjectDir)..\..\scripting\lua\xxtea;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <PrecompiledHeaderOutputFile />
+      <DisableSpecificWarnings>4267;4251;4244;4453;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <WarningLevel>Level1</WarningLevel>
+      <UseUnicodeForAssemblerListing>true</UseUnicodeForAssemblerListing>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>d3d11.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <IgnoreSpecificDefaultLibraries>ole32.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalOptions>/IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>
+      </Message>
+    </PreBuildEvent>
+    <PreLinkEvent>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy /Y /Q "$(ProjectDir)..\..\external\libwebsockets\wp8\lib\*.*" "$(OutDir)"</Command>
+    </PreLinkEvent>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Lib>
+      <AdditionalDependencies>liblua.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir);</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>PSAPI_VERSION=2;WP8;_WP8;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;COCOS2D_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\Classes;$(ProjectDir)..\..\cocos2dx;$(ProjectDir)..\..\cocos2dx\include;$(ProjectDir)..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\cocos2dx\platform\wp8;$(ProjectDir)..\..\cocos2dx\platform\winrt;$(ProjectDir)..\..\cocos2dx\platform;$(ProjectDir)..\..\cocos2dx\platform\third_party;$(ProjectDir)..\..\cocos2dx\platform\third_party\wp8;$(ProjectDir)..\..\cocos2dx\platform\third_party\wp8\zlib;$(ProjectDir)..\..\cocos2dx\platform\third_party\wp8\pthread;$(ProjectDir)..\..\cocos2dx\platform\third_party\wp8\libcurl;$(ProjectDir)..\..\cocos2dx\platform\third_party\wp8\libcurl\curl;$(ProjectDir)..\..\cocos2dx\platform\third_party\winrt\angleproject\include;$(ProjectDir)..\..\cocos2dx\platform\third_party\winrt\angleproject\samples\gles2_book\Common;$(ProjectDir)..\..\external;$(ProjectDir)..\..\external\emscripten\system\include;$(ProjectDir)..\..\external\chipmunk\include\chipmunk;$(ProjectDir)..\..\CocosDenshion\include;$(ProjectDir)..\..\extensions;$(ProjectDir)..\..\cocos2dx\platform\third_party\winrt\angle\include\EGL;$(ProjectDir)..\..\cocos2dx\platform\third_party\winrt\angle\include\gles2;$(ProjectDir)..\..\cocos2dx\platform\third_party\winrt\angle\include\glslang;$(ProjectDir)..\..\cocos2dx\platform\third_party\winrt\angle\include\khr;$(ProjectDir)..\..\cocos2dx\platform\third_party\winrt\angle\include;..;$(ProjectDir)..\;$(ProjectDir)..\..\scripting\lua\lua;$(ProjectDir)..\..\scripting\lua\cocos2dx_support\;$(ProjectDir)..\..\scripting\lua\tolua;$(ProjectDir)..\..\scripting\lua\;$(ProjectDir)..\..\scripting\lua\xxtea;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <PrecompiledHeaderOutputFile />
+      <DisableSpecificWarnings>4267;4251;4244;4453;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <UseUnicodeForAssemblerListing>true</UseUnicodeForAssemblerListing>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>d3d11.lib;libcocos2d.lib;libEGL_phone.lib;libExtensions.lib;libBox2d.lib;libchipmunk.lib;libGLESv2_phone.lib;libCocosDenshion.lib;liblua.lib;lua51.lib;pbc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <IgnoreSpecificDefaultLibraries>ole32.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalOptions>/IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>
+      </Message>
+    </PreBuildEvent>
+    <Lib>
+      <AdditionalDependencies>liblua.lib</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>$(OutDir);</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <PreprocessorDefinitions>PSAPI_VERSION=2;WP8;_WP8;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;ENV_WP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\Classes;$(ProjectDir)..\..\cocos2dx;$(ProjectDir)..\..\cocos2dx\include;$(ProjectDir)..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\cocos2dx\platform\wp8;$(ProjectDir)..\..\cocos2dx\platform\winrt;$(ProjectDir)..\..\cocos2dx\platform;$(ProjectDir)..\..\cocos2dx\platform\third_party;$(ProjectDir)..\..\cocos2dx\platform\third_party\wp8;$(ProjectDir)..\..\cocos2dx\platform\third_party\wp8\zlib;$(ProjectDir)..\..\cocos2dx\platform\third_party\wp8\pthread;$(ProjectDir)..\..\cocos2dx\platform\third_party\wp8\libcurl;$(ProjectDir)..\..\cocos2dx\platform\third_party\wp8\libcurl\curl;$(ProjectDir)..\..\cocos2dx\platform\third_party\winrt\angleproject\include;$(ProjectDir)..\..\cocos2dx\platform\third_party\winrt\angleproject\samples\gles2_book\Common;$(ProjectDir)..\..\external;$(ProjectDir)..\..\external\emscripten\system\include;$(ProjectDir)..\..\external\chipmunk\include\chipmunk;$(ProjectDir)..\..\CocosDenshion\include;$(ProjectDir)..\..\extensions;$(ProjectDir)..\..\cocos2dx\platform\third_party\winrt\angle\include\EGL;$(ProjectDir)..\..\cocos2dx\platform\third_party\winrt\angle\include\gles2;$(ProjectDir)..\..\cocos2dx\platform\third_party\winrt\angle\include\glslang;$(ProjectDir)..\..\cocos2dx\platform\third_party\winrt\angle\include\khr;$(ProjectDir)..\..\cocos2dx\platform\third_party\winrt\angle\include;..;$(ProjectDir)..\;$(ProjectDir)..\..\scripting\lua\lua;$(ProjectDir)..\..\scripting\lua\cocos2dx_support\;$(ProjectDir)..\..\scripting\lua\tolua;$(ProjectDir)..\..\scripting\lua\;$(ProjectDir)..\..\scripting\lua\xxtea;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <PrecompiledHeaderOutputFile />
+      <DisableSpecificWarnings>4267;4251;4244;4453;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <UseUnicodeForAssemblerListing>true</UseUnicodeForAssemblerListing>
+      <Optimization>Disabled</Optimization>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>d3d11.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <IgnoreSpecificDefaultLibraries>ole32.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalOptions>/IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>
+      </Message>
+    </PreBuildEvent>
+    <Lib>
+      <AdditionalDependencies>liblua.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir);</AdditionalLibraryDirectories>
+    </Lib>
+    <PreLinkEvent>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy /Y /Q "$(ProjectDir)..\..\external\libwebsockets\wp8\lib\*.*" "$(OutDir)"</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <PreprocessorDefinitions>PSAPI_VERSION=2;WP8;_WP8;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;ENV_WP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\Classes;$(ProjectDir)..\..\cocos2dx;$(ProjectDir)..\..\cocos2dx\include;$(ProjectDir)..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\cocos2dx\platform\wp8;$(ProjectDir)..\..\cocos2dx\platform\winrt;$(ProjectDir)..\..\cocos2dx\platform;$(ProjectDir)..\..\cocos2dx\platform\third_party;$(ProjectDir)..\..\cocos2dx\platform\third_party\wp8;$(ProjectDir)..\..\cocos2dx\platform\third_party\wp8\zlib;$(ProjectDir)..\..\cocos2dx\platform\third_party\wp8\pthread;$(ProjectDir)..\..\cocos2dx\platform\third_party\wp8\libcurl;$(ProjectDir)..\..\cocos2dx\platform\third_party\wp8\libcurl\curl;$(ProjectDir)..\..\cocos2dx\platform\third_party\winrt\angleproject\include;$(ProjectDir)..\..\cocos2dx\platform\third_party\winrt\angleproject\samples\gles2_book\Common;$(ProjectDir)..\..\external;$(ProjectDir)..\..\external\emscripten\system\include;$(ProjectDir)..\..\external\chipmunk\include\chipmunk;$(ProjectDir)..\..\CocosDenshion\include;$(ProjectDir)..\..\extensions;$(ProjectDir)..\..\cocos2dx\platform\third_party\winrt\angle\include\EGL;$(ProjectDir)..\..\cocos2dx\platform\third_party\winrt\angle\include\gles2;$(ProjectDir)..\..\cocos2dx\platform\third_party\winrt\angle\include\glslang;$(ProjectDir)..\..\cocos2dx\platform\third_party\winrt\angle\include\khr;$(ProjectDir)..\..\cocos2dx\platform\third_party\winrt\angle\include;..;$(ProjectDir)..\;$(ProjectDir)..\..\scripting\lua\lua;$(ProjectDir)..\..\scripting\lua\cocos2dx_support\;$(ProjectDir)..\..\scripting\lua\tolua;$(ProjectDir)..\..\scripting\lua\;$(ProjectDir)..\..\scripting\lua\xxtea;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <PrecompiledHeaderOutputFile />
+      <DisableSpecificWarnings>4267;4251;4244;4453;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <Optimization>Disabled</Optimization>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <UseUnicodeForAssemblerListing>true</UseUnicodeForAssemblerListing>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>d3d11.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <IgnoreSpecificDefaultLibraries>ole32.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalOptions>/IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>
+      </Message>
+    </PreBuildEvent>
+    <Lib>
+      <AdditionalDependencies>liblua.lib</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>$(OutDir);</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>Windows.winmd</IgnoreSpecificDefaultLibraries>
+    </Lib>
+    <PreLinkEvent>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy /Y /Q "$(ProjectDir)..\..\external\libwebsockets\win32\lib\*.*" "$(OutDir)"</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="platform.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <_CustomResource Include="..\Resources\**\*">
+      <Link>Assets\Resources\%(RecursiveDir)%(FileName)%(Extension)</Link>
+      <DeploymentContent>true</DeploymentContent>
+    </_CustomResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\cocos2dx\platform\winrt\semaphore.cpp" />
+    <ClCompile Include="..\Analysis\Analysis.cpp" />
+    <ClCompile Include="..\Analysis\wp8\AnalysisImpl.cpp" />
+    <ClCompile Include="..\CocosExt\ActionInternalExt.cpp" />
+    <ClCompile Include="..\CocosExt\ArmatureExt.cpp" />
+    <ClCompile Include="..\CocosExt\CCScollPanelViewExt.cpp" />
+    <ClCompile Include="..\CocosExt\CCScrollViewExt.cpp" />
+    <ClCompile Include="..\CocosExt\HttpRequestExt.cpp" />
+    <ClCompile Include="..\CocosExt\ImeChatBox.cpp" />
+    <ClCompile Include="..\CocosExt\RichTextExt.cpp" />
+    <ClCompile Include="..\CocosExt\SpriteExt.cpp" />
+    <ClCompile Include="..\CocosExt\TmxExt.cpp" />
+    <ClCompile Include="..\CocosExt\UIChoosePersonViewExt.cpp" />
+    <ClCompile Include="..\CocosExt\UICircleViewBaseExt.cpp" />
+    <ClCompile Include="..\CocosExt\UICircleViewExt.cpp" />
+    <ClCompile Include="..\CocosExt\UIPageViewExt.cpp" />
+    <ClCompile Include="..\CocosExt\UITabViewExt.cpp" />
+    <ClCompile Include="..\CocosExt\WheelRotateExt.cpp" />
+    <ClCompile Include="..\CocosExt\WordTable.cpp" />
+    <ClCompile Include="..\CocosExt\WStrExt.cpp" />
+    <ClCompile Include="..\Common\CommInclude.cpp" />
+    <ClCompile Include="..\Graph\DebugDraw.cpp" />
+    <ClCompile Include="..\Graph\Geometry2D.cpp" />
+    <ClCompile Include="..\Graph\Graph.cpp" />
+    <ClCompile Include="..\Model\AsyncSocket.cpp" />
+    <ClCompile Include="..\Model\CocosEasyManger.cpp" />
+    <ClCompile Include="..\Model\DBManager.cpp" />
+    <ClCompile Include="..\Model\DownloadManager.cpp" />
+    <ClCompile Include="..\Model\ResourceLoader.cpp" />
+    <ClCompile Include="..\Model\SceneTransit.cpp" />
+    <ClCompile Include="..\Model\TimerManager.cpp" />
+    <ClCompile Include="..\Physics\ColliderToolKits.cpp" />
+    <ClCompile Include="..\Physics\GLES-Render.cpp" />
+    <ClCompile Include="..\Physics\PhyCharacter.cpp" />
+    <ClCompile Include="..\Physics\PhysicalWorld.cpp" />
+    <ClCompile Include="..\Plugin\ImagePicker.cpp" />
+    <ClCompile Include="..\Plugin\wp8\CocosEasyPlugin.cpp" />
+    <ClCompile Include="..\Plugin\wp8\wp8ImagePicker.cpp" />
+    <ClCompile Include="..\Script\CELuaEngine.cpp" />
+    <ClCompile Include="..\Script\LuaCocosEasy.cpp" />
+    <ClCompile Include="..\Script\Lua_CocosEasy_Manual.cpp" />
+    <ClCompile Include="..\SDKEasy\SDKConstants.cpp" />
+    <ClCompile Include="..\SDKEasy\SDKManager.cpp" />
+    <ClCompile Include="..\SDKEasy\wp8\SDKImpl.cpp" />
+    <ClCompile Include="..\Shader\CEGLProgram.cpp" />
+    <ClCompile Include="..\Utility\base64Easy.cpp" />
+    <ClCompile Include="..\Utility\DataParser.cpp" />
+    <ClCompile Include="..\Utility\DB\CppSQLite3.cpp" />
+    <ClCompile Include="..\Utility\DB\DBRSWrapper.cpp" />
+    <ClCompile Include="..\Utility\DB\DBTblLoadHelper.cpp" />
+    <ClCompile Include="..\Utility\DynamicDownload.cpp" />
+    <ClCompile Include="..\Utility\EventManager.cpp" />
+    <ClCompile Include="..\Utility\HTTP\CCHttpDownloadQueueManager.cpp" />
+    <ClCompile Include="..\Utility\HTTP\CCHttpRequestQueueManager.cpp" />
+    <ClCompile Include="..\Utility\IFL.cpp" />
+    <ClCompile Include="..\Utility\Log.cpp" />
+    <ClCompile Include="..\Utility\MVC\CCFacade.cpp" />
+    <ClCompile Include="..\Utility\MVC\CCIModule.cpp" />
+    <ClCompile Include="..\Utility\MVC\CCModuleManager.cpp" />
+    <ClCompile Include="..\Utility\MVC\CCNetFacade.cpp" />
+    <ClCompile Include="..\Utility\MVC\core\Controller.cpp" />
+    <ClCompile Include="..\Utility\MVC\core\Facade.cpp" />
+    <ClCompile Include="..\Utility\MVC\core\Modele.cpp" />
+    <ClCompile Include="..\Utility\MVC\core\Observer.cpp" />
+    <ClCompile Include="..\Utility\MVC\core\View.cpp" />
+    <ClCompile Include="..\Utility\MVC\interface\ICommand.cpp" />
+    <ClCompile Include="..\Utility\MVC\interface\IController.cpp" />
+    <ClCompile Include="..\Utility\MVC\interface\IMediator.cpp" />
+    <ClCompile Include="..\Utility\MVC\interface\INotification.cpp" />
+    <ClCompile Include="..\Utility\MVC\interface\IProxy.cpp" />
+    <ClCompile Include="..\Utility\MVC\interface\ISend.cpp" />
+    <ClCompile Include="..\Utility\MVC\Model\DispatchCommand.cpp" />
+    <ClCompile Include="..\Utility\MVC\pattern\obsever\Notification.cpp" />
+    <ClCompile Include="..\Utility\Socket\ClientSocket.cpp" />
+    <ClCompile Include="..\Utility\Socket\ISocket.cpp" />
+    <ClCompile Include="..\Utility\ThreadPool\CCMutex.cpp" />
+    <ClCompile Include="..\Utility\ThreadPool\CCPThread.cpp" />
+    <ClCompile Include="..\Utility\ThreadPool\CCSem.cpp" />
+    <ClCompile Include="..\Utility\ThreadPool\CCThreadPool.cpp" />
+    <ClCompile Include="..\Utility\UploadManager.cpp" />
+    <ClCompile Include="..\Utility\Utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\cocos2dx\platform\winrt\semaphore.h" />
+    <ClInclude Include="..\Analysis\Analysis.h" />
+    <ClInclude Include="..\CocosEasy.h" />
+    <ClInclude Include="..\CocosExt\ActionInternalExt.h" />
+    <ClInclude Include="..\CocosExt\ArmatureExt.h" />
+    <ClInclude Include="..\CocosExt\CCLString.h" />
+    <ClInclude Include="..\CocosExt\CCScollPanelViewExt.h" />
+    <ClInclude Include="..\CocosExt\CCScrollViewExt.h" />
+    <ClInclude Include="..\CocosExt\DictionaryExt.h" />
+    <ClInclude Include="..\CocosExt\HttpRequestExt.h" />
+    <ClInclude Include="..\CocosExt\ImeChatBox.h" />
+    <ClInclude Include="..\CocosExt\RichTextExt.h" />
+    <ClInclude Include="..\CocosExt\SpriteExt.h" />
+    <ClInclude Include="..\CocosExt\TmxExt.h" />
+    <ClInclude Include="..\CocosExt\UIChoosePersonViewExt.h" />
+    <ClInclude Include="..\CocosExt\UICircleViewBaseExt.h" />
+    <ClInclude Include="..\CocosExt\UICircleViewExt.h" />
+    <ClInclude Include="..\CocosExt\UIPageViewExt.h" />
+    <ClInclude Include="..\CocosExt\UITabViewExt.h" />
+    <ClInclude Include="..\CocosExt\WheelRotateExt.h" />
+    <ClInclude Include="..\CocosExt\WidgetEvent.h" />
+    <ClInclude Include="..\CocosExt\WordTable.h" />
+    <ClInclude Include="..\CocosExt\WStrExt.h" />
+    <ClInclude Include="..\Common\CocosEasyDef.h" />
+    <ClInclude Include="..\Common\CommInclude.h" />
+    <ClInclude Include="..\Graph\DebugDraw.h" />
+    <ClInclude Include="..\Graph\Geometry2D.h" />
+    <ClInclude Include="..\Graph\Graph.h" />
+    <ClInclude Include="..\Model\AsyncSocket.h" />
+    <ClInclude Include="..\Model\CocosEasyManger.h" />
+    <ClInclude Include="..\Model\DBManager.h" />
+    <ClInclude Include="..\Model\DownloadManager.h" />
+    <ClInclude Include="..\Model\ResourceLoader.h" />
+    <ClInclude Include="..\Model\SceneTransit.h" />
+    <ClInclude Include="..\Model\TimerManager.h" />
+    <ClInclude Include="..\Physics\ColliderToolKits.h" />
+    <ClInclude Include="..\Physics\GLES-Render.h" />
+    <ClInclude Include="..\Physics\PhyCharacter.h" />
+    <ClInclude Include="..\Physics\PhysicalWorld.h" />
+    <ClInclude Include="..\Plugin\CocosEasyPlugin.h" />
+    <ClInclude Include="..\Plugin\ImagePicker.h" />
+    <ClInclude Include="..\Script\CELuaEngine.h" />
+    <ClInclude Include="..\Script\LuaCocosEasy.h" />
+    <ClInclude Include="..\Script\Lua_CocosEasy_Manual.h" />
+    <ClInclude Include="..\SDKEasy\SDKConstants.h" />
+    <ClInclude Include="..\SDKEasy\SDKManager.h" />
+    <ClInclude Include="..\Shader\CEGLProgram.h" />
+    <ClInclude Include="..\Shader\ceShader_PositionTextureColorGrey_frag.h" />
+    <ClInclude Include="..\Shader\ceShader_Motion_Blur_frag.h" />
+    <ClInclude Include="..\Shader\ceShader_PositionTextureColorHSL_frag.h" />
+    <ClInclude Include="..\Shader\ceShader_PositionTextureOutline_frag.h" />
+    <ClInclude Include="..\Shader\ceShader_Radial_Blur_frag.h" />
+    <ClInclude Include="..\Utility\base64Easy.h" />
+    <ClInclude Include="..\Utility\DataParser.h" />
+    <ClInclude Include="..\Utility\DB\CppSQLite3.h" />
+    <ClInclude Include="..\Utility\DB\DBRSWrapper.h" />
+    <ClInclude Include="..\Utility\DB\DBTblLoadHelper.h" />
+    <ClInclude Include="..\Utility\DB\sqlite3.h" />
+    <ClInclude Include="..\Utility\DynamicDownload.h" />
+    <ClInclude Include="..\Utility\EventDef.h" />
+    <ClInclude Include="..\Utility\EventManager.h" />
+    <ClInclude Include="..\Utility\GContainer.h" />
+    <ClInclude Include="..\Utility\HTTP\CCHttpDownloadQueueManager.h" />
+    <ClInclude Include="..\Utility\HTTP\CCHttpRequestQueueManager.h" />
+    <ClInclude Include="..\Utility\IFL.h" />
+    <ClInclude Include="..\Utility\Log.h" />
+    <ClInclude Include="..\Utility\MVC\CCFacade.h" />
+    <ClInclude Include="..\Utility\MVC\CCIModule.h" />
+    <ClInclude Include="..\Utility\MVC\CCModuleManager.h" />
+    <ClInclude Include="..\Utility\MVC\CCNetFacade.h" />
+    <ClInclude Include="..\Utility\MVC\core\Controller.h" />
+    <ClInclude Include="..\Utility\MVC\core\Facade.h" />
+    <ClInclude Include="..\Utility\MVC\core\Modele.h" />
+    <ClInclude Include="..\Utility\MVC\core\Observer.h" />
+    <ClInclude Include="..\Utility\MVC\core\View.h" />
+    <ClInclude Include="..\Utility\MVC\interface\ICommand.h" />
+    <ClInclude Include="..\Utility\MVC\interface\IController.h" />
+    <ClInclude Include="..\Utility\MVC\interface\IMediator.h" />
+    <ClInclude Include="..\Utility\MVC\interface\INotification.h" />
+    <ClInclude Include="..\Utility\MVC\interface\IProxy.h" />
+    <ClInclude Include="..\Utility\MVC\interface\ISend.h" />
+    <ClInclude Include="..\Utility\MVC\Model\DispatchCommand.h" />
+    <ClInclude Include="..\Utility\MVC\Mvc.h" />
+    <ClInclude Include="..\Utility\MVC\pattern\obsever\Notification.h" />
+    <ClInclude Include="..\Utility\Single.h" />
+    <ClInclude Include="..\Utility\Socket\ClientSocket.h" />
+    <ClInclude Include="..\Utility\Socket\ISocket.h" />
+    <ClInclude Include="..\Utility\ThreadPool\CCMutex.h" />
+    <ClInclude Include="..\Utility\ThreadPool\CCPThread.h" />
+    <ClInclude Include="..\Utility\ThreadPool\CCRunable.h" />
+    <ClInclude Include="..\Utility\ThreadPool\CCSem.h" />
+    <ClInclude Include="..\Utility\ThreadPool\CCThreadPool.h" />
+    <ClInclude Include="..\Utility\UploadManager.h" />
+    <ClInclude Include="..\Utility\Utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\cocos2dx\platform\third_party\wp8\libraries\arm\libEGL_phone.dll" />
+    <None Include="..\..\cocos2dx\platform\third_party\wp8\libraries\arm\libGLESv2_phone.dll" />
+    <None Include="..\..\cocos2dx\platform\third_party\wp8\libraries\x86\libEGL_phone.dll" />
+    <None Include="..\..\cocos2dx\platform\third_party\wp8\libraries\x86\libGLESv2_phone.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\cocos2dx\proj.wp8\libcocos2d.vcxproj">
+      <Project>{871aadce-3905-48ef-ac2b-c67c335b0dcc}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CocosDenshion\proj.wp8\CocosDenshion.vcxproj">
+      <Project>{72ddd46b-55b1-4531-9eea-72081acbcaa2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\extensions\proj.wp8\libExtensions.vcxproj">
+      <Project>{a5ce59f9-2785-4e08-bd3c-0f370eeca439}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\Box2D\proj.wp8\Box2D.vcxproj">
+      <Project>{79fc91d4-974c-4bc7-8e8c-79e194437de7}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\external\chipmunk\proj.wp8\chipmunk.vcxproj">
+      <Project>{3ad76ea1-d698-40d2-b04d-d9ab8171f40b}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Target Name="_CollectCustomResources" BeforeTargets="AssignTargetPaths">
+    <Message Text="Adding resource: %(_CustomResource.Identity) -&gt; %(_CustomResource.Link)" />
+    <ItemGroup>
+      <None Include="@(_CustomResource)" />
+    </ItemGroup>
+  </Target>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsPhone\v$(TargetPlatformVersion)\Microsoft.Cpp.WindowsPhone.$(TargetPlatformVersion).targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

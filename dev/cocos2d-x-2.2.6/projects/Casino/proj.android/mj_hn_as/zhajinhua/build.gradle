@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        snowcat {
+            keyAlias 'snowcat'
+            keyPassword '123456'
+            storeFile file('/Users/kevin/Documents/jinhua/dev/cocos2d-x-2.2.6/projects/Casino/proj.android/zhajinhua_as/sign/snowcat.keystore')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion 24
+    buildToolsVersion "25.0.1"
+    sourceSets.main.jni.srcDirs = [] //disable automatic ndk-build call
+
+    defaultConfig {
+        applicationId "com.snowcat.hnmj"
+        minSdkVersion 14
+        targetSdkVersion 14
+
+        ndk {
+            moduleName "cocos2dlua_shared"
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.snowcat
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile project(':pluginLibs')
+    compile project(':sDKEasyLibs')
+    compile 'com.android.support:support-v4:25.1.0'
+    compile files('libs/bugly_1.2.7_release.jar')
+    compile files('libs/bugly_cocos2dx_1.2.9_release.jar')
+    compile files('libs/com.umeng.message.lib_v2.3.0.jar')
+    compile files('libs/GCloudVoice.jar')
+    compile files('libs/libammsdk.jar')
+    compile files('libs/dagger-2.7.jar')
+    compile files('libs/javax.inject-1.jar')
+}

@@ -1,0 +1,20 @@
+info face="slot_candy_win" size=32 bold=0 italic=0 charset="" unicode=0 stretchH=100 smooth=1 aa=1 padding=0,0,0,0 spacing=1,1
+common lineHeight=42 base=26 scaleW=137 scaleH=131 pages=1 packed=0 alphaChnl=1 redChnl=0 greenChnl=0 blueChnl=0
+page id=0 file="slot_candy_win.png"
+chars count=14
+char id=120 x=31 y=0 width=29 height=31 xoffset=0 yoffset=11 xadvance=27 page=0 chnl=0 letter="x"
+char id=44 x=0 y=114 width=17 height=16 xoffset=0 yoffset=30 xadvance=15 page=0 chnl=0 letter=","
+char id=49 x=117 y=0 width=19 height=36 xoffset=0 yoffset=6 xadvance=17 page=0 chnl=0 letter="1"
+char id=50 x=0 y=0 width=30 height=37 xoffset=0 yoffset=5 xadvance=28 page=0 chnl=0 letter="2"
+char id=51 x=89 y=69 width=27 height=37 xoffset=0 yoffset=5 xadvance=25 page=0 chnl=0 letter="3"
+char id=52 x=60 y=32 width=29 height=36 xoffset=0 yoffset=6 xadvance=27 page=0 chnl=0 letter="4"
+char id=53 x=90 y=0 width=26 height=36 xoffset=0 yoffset=6 xadvance=24 page=0 chnl=0 letter="5"
+char id=54 x=30 y=76 width=29 height=36 xoffset=0 yoffset=6 xadvance=27 page=0 chnl=0 letter="6"
+char id=55 x=60 y=69 width=28 height=36 xoffset=0 yoffset=6 xadvance=26 page=0 chnl=0 letter="7"
+char id=56 x=0 y=76 width=29 height=37 xoffset=0 yoffset=5 xadvance=27 page=0 chnl=0 letter="8"
+char id=57 x=30 y=38 width=29 height=37 xoffset=0 yoffset=5 xadvance=27 page=0 chnl=0 letter="9"
+char id=48 x=0 y=38 width=29 height=37 xoffset=0 yoffset=5 xadvance=27 page=0 chnl=0 letter="0"
+char id=32 x=0 y=0 width=0 height=0 xoffset=0 yoffset=0 xadvance=8 page=0 chnl=0 letter=" "
+char id=9 x=0 y=0 width=0 height=0 xoffset=0 yoffset=0 xadvance=64 page=0 chnl=0 letter="	"
+
+kernings count=0

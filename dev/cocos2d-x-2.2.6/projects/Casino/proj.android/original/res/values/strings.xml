@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name_slot">老虎机大师</string>
+    <string name="google_cancel_purchase">You have canceled the purchase</string>
+    <string name="google_setup_failed">Google Play Set Up Failed!</string>
+
+</resources>

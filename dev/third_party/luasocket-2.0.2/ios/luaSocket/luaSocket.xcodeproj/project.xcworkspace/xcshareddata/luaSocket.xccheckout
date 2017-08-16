@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8966B588-5BEB-4E0F-AF4F-8A6487975281</string>
+	<key>IDESourceControlProjectName</key>
+	<string>luaSocket</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>41E570E3-8A57-4CA0-9677-CC5DF2736E97</key>
+		<string>https://118.192.76.99/svn/godlike</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>luaSocket.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>41E570E3-8A57-4CA0-9677-CC5DF2736E97</key>
+		<string>../../../../../../../..</string>
+		<key>56CE9B90-9FCD-4F9F-B922-8505AE275A81</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://118.192.76.99/svn/godlike/dev/client/third_party/luasocket-2.0.2/ios/luaSocket/luaSocket.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>56CE9B90-9FCD-4F9F-B922-8505AE275A81</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>41E570E3-8A57-4CA0-9677-CC5DF2736E97</string>
+			<key>IDESourceControlWCCName</key>
+			<string>luaSocket</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>56CE9B90-9FCD-4F9F-B922-8505AE275A81</string>
+			<key>IDESourceControlWCCName</key>
+			<string>luaSocket</string>
+		</dict>
+	</array>
+</dict>
+</plist>

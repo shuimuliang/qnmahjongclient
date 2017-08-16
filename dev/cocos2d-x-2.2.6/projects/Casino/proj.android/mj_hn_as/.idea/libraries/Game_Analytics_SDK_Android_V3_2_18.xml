@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Game_Analytics_SDK_Android_V3.2.18">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/pluginLibs/libs/Game_Analytics_SDK_Android_V3.2.18.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

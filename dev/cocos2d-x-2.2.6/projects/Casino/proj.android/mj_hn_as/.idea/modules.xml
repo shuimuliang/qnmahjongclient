@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/libcocos2dx/libcocos2dx.iml" filepath="$PROJECT_DIR$/libcocos2dx/libcocos2dx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mj_hn_as.iml" filepath="$PROJECT_DIR$/mj_hn_as.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pluginLibs/pluginLibs.iml" filepath="$PROJECT_DIR$/pluginLibs/pluginLibs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sDKEasyLibs/sDKEasyLibs.iml" filepath="$PROJECT_DIR$/sDKEasyLibs/sDKEasyLibs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zhajinhua/zhajinhua.iml" filepath="$PROJECT_DIR$/zhajinhua/zhajinhua.iml" />
+    </modules>
+  </component>
+</project>

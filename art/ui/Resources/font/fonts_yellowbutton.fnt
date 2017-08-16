@@ -1,0 +1,23 @@
+info face="fonts_yellowbutton" size=32 bold=0 italic=0 charset="" unicode=0 stretchH=100 smooth=1 aa=1 padding=0,0,0,0 spacing=1,1
+common lineHeight=36 base=26 scaleW=128 scaleH=135 pages=1 packed=0 alphaChnl=1 redChnl=0 greenChnl=0 blueChnl=0
+page id=0 file="fonts_yellowbutton.png"
+chars count=17
+char id=39046 x=33 y=0 width=32 height=33 xoffset=0 yoffset=3 xadvance=28 page=0 chnl=0 letter="领"
+char id=21462 x=96 y=102 width=31 height=32 xoffset=0 yoffset=4 xadvance=27 page=0 chnl=0 letter="取"
+char id=20080 x=64 y=102 width=31 height=32 xoffset=0 yoffset=4 xadvance=27 page=0 chnl=0 letter="买"
+char id=20837 x=0 y=0 width=32 height=33 xoffset=0 yoffset=3 xadvance=28 page=0 chnl=0 letter="入"
+char id=36141 x=66 y=0 width=30 height=33 xoffset=0 yoffset=3 xadvance=26 page=0 chnl=0 letter="购"
+char id=37329 x=32 y=102 width=31 height=32 xoffset=0 yoffset=3 xadvance=27 page=0 chnl=0 letter="金"
+char id=24065 x=97 y=0 width=30 height=32 xoffset=0 yoffset=4 xadvance=26 page=0 chnl=0 letter="币"
+char id=21435 x=65 y=68 width=31 height=33 xoffset=0 yoffset=3 xadvance=27 page=0 chnl=0 letter="去"
+char id=20805 x=65 y=34 width=31 height=33 xoffset=0 yoffset=3 xadvance=27 page=0 chnl=0 letter="充"
+char id=20540 x=0 y=68 width=32 height=33 xoffset=0 yoffset=3 xadvance=28 page=0 chnl=0 letter="值"
+char id=36865 x=33 y=34 width=31 height=33 xoffset=0 yoffset=3 xadvance=27 page=0 chnl=0 letter="送"
+char id=20840 x=0 y=102 width=31 height=32 xoffset=0 yoffset=3 xadvance=27 page=0 chnl=0 letter="全"
+char id=26700 x=0 y=34 width=32 height=33 xoffset=0 yoffset=3 xadvance=28 page=0 chnl=0 letter="桌"
+char id=31609 x=33 y=68 width=31 height=33 xoffset=0 yoffset=3 xadvance=27 page=0 chnl=0 letter="筹"
+char id=30721 x=97 y=33 width=30 height=32 xoffset=0 yoffset=4 xadvance=26 page=0 chnl=0 letter="码"
+char id=32 x=0 y=0 width=0 height=0 xoffset=0 yoffset=0 xadvance=22 page=0 chnl=0 letter=" "
+char id=9 x=0 y=0 width=0 height=0 xoffset=0 yoffset=0 xadvance=176 page=0 chnl=0 letter="	"
+
+kernings count=0

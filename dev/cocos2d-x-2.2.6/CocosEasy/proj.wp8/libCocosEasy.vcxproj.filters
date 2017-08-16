@@ -1,0 +1,611 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Analysis">
+      <UniqueIdentifier>{15b0779f-f3fb-4606-a93f-7274ce90b859}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CocosExt">
+      <UniqueIdentifier>{5177cb4c-7e1f-444d-a019-22b4b111b34c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{44fd5cc7-6288-4af4-bb35-f40bc31af869}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graph">
+      <UniqueIdentifier>{b26bba72-9642-4fec-adb6-1c02b565bfe6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model">
+      <UniqueIdentifier>{37117f2e-74de-423c-a760-92830e7e103b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics">
+      <UniqueIdentifier>{4afd3be4-32fe-48bf-a5ea-1a1a3074c738}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin">
+      <UniqueIdentifier>{d11bcb37-5a45-4272-ba46-866410621252}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script">
+      <UniqueIdentifier>{8ced27a0-8e2f-4e44-8f62-4ce579911671}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{ce4d2644-2926-4f55-8603-9cd29b66c0df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\DB">
+      <UniqueIdentifier>{9af9ea8c-5b5b-481d-836e-7bf83ad6a4b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\HTTP">
+      <UniqueIdentifier>{b360fd1a-84e7-49d3-8477-bc87f3ad9c3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\MVC">
+      <UniqueIdentifier>{7466b320-8133-4c14-9c16-32e6a3480c98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\ThreadPool">
+      <UniqueIdentifier>{f2ff0675-23ee-4305-a58e-2e319614ab55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\MVC\core">
+      <UniqueIdentifier>{bda5b364-f96c-4885-bd49-4c0c25909141}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\MVC\INTERFACE">
+      <UniqueIdentifier>{5fac8908-322f-43f1-974f-b4794bb77779}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\MVC\pattern">
+      <UniqueIdentifier>{2cafdfc8-626a-4ad2-99e4-c87f2a30b4ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\MVC\model">
+      <UniqueIdentifier>{2a062e71-172d-4d95-a13f-1bb20e9be121}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\MVC\view">
+      <UniqueIdentifier>{f3fda44c-0e69-4cd5-801d-6d47b11db104}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\MVC\pattern\observer">
+      <UniqueIdentifier>{c299d176-6ae0-4edc-9cbd-dd3ad25c32a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDKEasy">
+      <UniqueIdentifier>{ed9a1ed1-2ac7-4f19-a358-04d4aa89fe6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDKEasy\wp8">
+      <UniqueIdentifier>{8a509671-ff8f-4500-826e-11f362eff70a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Analysis\wp8">
+      <UniqueIdentifier>{1cd0d68b-b0f9-4e8b-aa0e-9078a7ca4697}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\Socket">
+      <UniqueIdentifier>{1a5e1c81-9827-42a0-a40b-1ba67ce6caa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{e1137442-f8bd-4fdf-8a04-49e888983795}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugin\wp8">
+      <UniqueIdentifier>{f9f2bd2c-095a-49d5-a414-c7dd2b570270}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Analysis\Analysis.cpp">
+      <Filter>Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CocosExt\ActionInternalExt.cpp">
+      <Filter>CocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CocosExt\ArmatureExt.cpp">
+      <Filter>CocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CocosExt\CCScollPanelViewExt.cpp">
+      <Filter>CocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CocosExt\CCScrollViewExt.cpp">
+      <Filter>CocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CocosExt\HttpRequestExt.cpp">
+      <Filter>CocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CocosExt\RichTextExt.cpp">
+      <Filter>CocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CocosExt\SpriteExt.cpp">
+      <Filter>CocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CocosExt\TmxExt.cpp">
+      <Filter>CocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CocosExt\UIChoosePersonViewExt.cpp">
+      <Filter>CocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CocosExt\UICircleViewBaseExt.cpp">
+      <Filter>CocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CocosExt\UICircleViewExt.cpp">
+      <Filter>CocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CocosExt\UIPageViewExt.cpp">
+      <Filter>CocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CocosExt\UITabViewExt.cpp">
+      <Filter>CocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CocosExt\WheelRotateExt.cpp">
+      <Filter>CocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CocosExt\WStrExt.cpp">
+      <Filter>CocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\CommInclude.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graph\DebugDraw.cpp">
+      <Filter>Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graph\Geometry2D.cpp">
+      <Filter>Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graph\Graph.cpp">
+      <Filter>Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Model\CocosEasyManger.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Model\DBManager.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Model\DownloadManager.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Model\ResourceLoader.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Model\SceneTransit.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Physics\ColliderToolKits.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Physics\GLES-Render.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Physics\PhyCharacter.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Physics\PhysicalWorld.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Script\CELuaEngine.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Script\Lua_CocosEasy_Manual.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Script\LuaCocosEasy.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utility\DataParser.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utility\EventManager.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utility\IFL.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utility\Utils.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utility\DB\CppSQLite3.cpp">
+      <Filter>Utility\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utility\DB\DBRSWrapper.cpp">
+      <Filter>Utility\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utility\DB\DBTblLoadHelper.cpp">
+      <Filter>Utility\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utility\HTTP\CCHttpDownloadQueueManager.cpp">
+      <Filter>Utility\HTTP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utility\HTTP\CCHttpRequestQueueManager.cpp">
+      <Filter>Utility\HTTP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utility\MVC\CCFacade.cpp">
+      <Filter>Utility\MVC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utility\MVC\CCIModule.cpp">
+      <Filter>Utility\MVC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utility\MVC\CCModuleManager.cpp">
+      <Filter>Utility\MVC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utility\MVC\CCNetFacade.cpp">
+      <Filter>Utility\MVC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utility\MVC\core\Controller.cpp">
+      <Filter>Utility\MVC\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utility\MVC\core\Facade.cpp">
+      <Filter>Utility\MVC\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utility\MVC\core\Modele.cpp">
+      <Filter>Utility\MVC\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utility\MVC\core\Observer.cpp">
+      <Filter>Utility\MVC\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utility\MVC\core\View.cpp">
+      <Filter>Utility\MVC\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utility\MVC\interface\ICommand.cpp">
+      <Filter>Utility\MVC\INTERFACE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utility\MVC\interface\IController.cpp">
+      <Filter>Utility\MVC\INTERFACE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utility\MVC\interface\IMediator.cpp">
+      <Filter>Utility\MVC\INTERFACE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utility\MVC\interface\INotification.cpp">
+      <Filter>Utility\MVC\INTERFACE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utility\MVC\interface\IProxy.cpp">
+      <Filter>Utility\MVC\INTERFACE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utility\MVC\interface\ISend.cpp">
+      <Filter>Utility\MVC\INTERFACE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utility\MVC\Model\DispatchCommand.cpp">
+      <Filter>Utility\MVC\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utility\MVC\pattern\obsever\Notification.cpp">
+      <Filter>Utility\MVC\pattern\observer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SDKEasy\SDKManager.cpp">
+      <Filter>SDKEasy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SDKEasy\wp8\SDKImpl.cpp">
+      <Filter>SDKEasy\wp8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Analysis\wp8\AnalysisImpl.cpp">
+      <Filter>Analysis\wp8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CocosExt\WordTable.cpp">
+      <Filter>CocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utility\DynamicDownload.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utility\ThreadPool\CCMutex.cpp">
+      <Filter>Utility\ThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utility\ThreadPool\CCPThread.cpp">
+      <Filter>Utility\ThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utility\ThreadPool\CCThreadPool.cpp">
+      <Filter>Utility\ThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utility\Log.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utility\ThreadPool\CCSem.cpp">
+      <Filter>Utility\ThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cocos2dx\platform\winrt\semaphore.cpp">
+      <Filter>Utility\ThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SDKEasy\SDKConstants.cpp">
+      <Filter>SDKEasy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utility\Socket\ClientSocket.cpp">
+      <Filter>Utility\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utility\Socket\ISocket.cpp">
+      <Filter>Utility\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shader\CEGLProgram.cpp">
+      <Filter>Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Model\TimerManager.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CocosExt\ImeChatBox.cpp">
+      <Filter>CocosExt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utility\UploadManager.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Model\AsyncSocket.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Plugin\wp8\CocosEasyPlugin.cpp">
+      <Filter>Plugin\wp8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Plugin\ImagePicker.cpp">
+      <Filter>Plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Plugin\wp8\wp8ImagePicker.cpp">
+      <Filter>Plugin\wp8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utility\base64Easy.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Analysis\Analysis.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CocosExt\ActionInternalExt.h">
+      <Filter>CocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CocosExt\ArmatureExt.h">
+      <Filter>CocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CocosExt\CCLString.h">
+      <Filter>CocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CocosExt\CCScollPanelViewExt.h">
+      <Filter>CocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CocosExt\CCScrollViewExt.h">
+      <Filter>CocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CocosExt\DictionaryExt.h">
+      <Filter>CocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CocosExt\HttpRequestExt.h">
+      <Filter>CocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CocosExt\RichTextExt.h">
+      <Filter>CocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CocosExt\SpriteExt.h">
+      <Filter>CocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CocosExt\TmxExt.h">
+      <Filter>CocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CocosExt\UIChoosePersonViewExt.h">
+      <Filter>CocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CocosExt\UICircleViewBaseExt.h">
+      <Filter>CocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CocosExt\UICircleViewExt.h">
+      <Filter>CocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CocosExt\UIPageViewExt.h">
+      <Filter>CocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CocosExt\UITabViewExt.h">
+      <Filter>CocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CocosExt\WheelRotateExt.h">
+      <Filter>CocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CocosExt\WidgetEvent.h">
+      <Filter>CocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CocosExt\WStrExt.h">
+      <Filter>CocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CocosEasyDef.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CommInclude.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graph\DebugDraw.h">
+      <Filter>Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graph\Geometry2D.h">
+      <Filter>Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graph\Graph.h">
+      <Filter>Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Model\CocosEasyManger.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Model\DBManager.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Model\DownloadManager.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Model\ResourceLoader.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Model\SceneTransit.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Physics\ColliderToolKits.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Physics\GLES-Render.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Physics\PhyCharacter.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Physics\PhysicalWorld.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Plugin\CocosEasyPlugin.h">
+      <Filter>Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Script\CELuaEngine.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Script\Lua_CocosEasy_Manual.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Script\LuaCocosEasy.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\DataParser.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\EventManager.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\GContainer.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\IFL.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\Single.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\Utils.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\DB\CppSQLite3.h">
+      <Filter>Utility\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\DB\DBRSWrapper.h">
+      <Filter>Utility\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\DB\DBTblLoadHelper.h">
+      <Filter>Utility\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\DB\sqlite3.h">
+      <Filter>Utility\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\HTTP\CCHttpDownloadQueueManager.h">
+      <Filter>Utility\HTTP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\HTTP\CCHttpRequestQueueManager.h">
+      <Filter>Utility\HTTP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\MVC\CCFacade.h">
+      <Filter>Utility\MVC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\MVC\CCIModule.h">
+      <Filter>Utility\MVC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\MVC\CCModuleManager.h">
+      <Filter>Utility\MVC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\MVC\CCNetFacade.h">
+      <Filter>Utility\MVC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\MVC\Mvc.h">
+      <Filter>Utility\MVC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\MVC\core\Controller.h">
+      <Filter>Utility\MVC\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\MVC\core\Facade.h">
+      <Filter>Utility\MVC\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\MVC\core\Modele.h">
+      <Filter>Utility\MVC\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\MVC\core\Observer.h">
+      <Filter>Utility\MVC\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\MVC\core\View.h">
+      <Filter>Utility\MVC\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\MVC\interface\ICommand.h">
+      <Filter>Utility\MVC\INTERFACE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\MVC\interface\IController.h">
+      <Filter>Utility\MVC\INTERFACE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\MVC\interface\IMediator.h">
+      <Filter>Utility\MVC\INTERFACE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\MVC\interface\INotification.h">
+      <Filter>Utility\MVC\INTERFACE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\MVC\interface\IProxy.h">
+      <Filter>Utility\MVC\INTERFACE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\MVC\interface\ISend.h">
+      <Filter>Utility\MVC\INTERFACE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\MVC\Model\DispatchCommand.h">
+      <Filter>Utility\MVC\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\MVC\pattern\obsever\Notification.h">
+      <Filter>Utility\MVC\pattern\observer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDKEasy\SDKManager.h">
+      <Filter>SDKEasy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CocosEasy.h" />
+    <ClInclude Include="..\Utility\EventDef.h" />
+    <ClInclude Include="..\..\cocos2dx\platform\winrt\semaphore.h">
+      <Filter>Utility\ThreadPool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CocosExt\WordTable.h">
+      <Filter>CocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\DynamicDownload.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\ThreadPool\CCMutex.h">
+      <Filter>Utility\ThreadPool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\ThreadPool\CCPThread.h">
+      <Filter>Utility\ThreadPool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\ThreadPool\CCRunable.h">
+      <Filter>Utility\ThreadPool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\ThreadPool\CCThreadPool.h">
+      <Filter>Utility\ThreadPool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\Log.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\ThreadPool\CCSem.h">
+      <Filter>Utility\ThreadPool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDKEasy\SDKConstants.h">
+      <Filter>SDKEasy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\Socket\ClientSocket.h">
+      <Filter>Utility\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\Socket\ISocket.h">
+      <Filter>Utility\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shader\CEGLProgram.h">
+      <Filter>Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shader\ceShader_PositionTextureColorHSL_frag.h">
+      <Filter>Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Model\TimerManager.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shader\ceShader_Motion_Blur_frag.h">
+      <Filter>Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shader\ceShader_PositionTextureOutline_frag.h">
+      <Filter>Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shader\ceShader_Radial_Blur_frag.h">
+      <Filter>Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CocosExt\ImeChatBox.h">
+      <Filter>CocosExt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\UploadManager.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shader\ceShader_PositionTextureColorGrey_frag.h">
+      <Filter>Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Model\AsyncSocket.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Plugin\ImagePicker.h">
+      <Filter>Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Utility\base64Easy.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\cocos2dx\platform\third_party\wp8\libraries\x86\libEGL_phone.dll" />
+    <None Include="..\..\cocos2dx\platform\third_party\wp8\libraries\x86\libGLESv2_phone.dll" />
+    <None Include="..\..\cocos2dx\platform\third_party\wp8\libraries\arm\libEGL_phone.dll" />
+    <None Include="..\..\cocos2dx\platform\third_party\wp8\libraries\arm\libGLESv2_phone.dll" />
+  </ItemGroup>
+</Project>

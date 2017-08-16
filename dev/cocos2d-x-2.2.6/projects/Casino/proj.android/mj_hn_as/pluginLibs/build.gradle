@@ -1,0 +1,26 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "25.0.1"
+
+    defaultConfig {
+        minSdkVersion 10
+        targetSdkVersion 10
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile project(':libcocos2dx')
+    compile files('libs/AF-Android-SDK-v2.3.1.18.jar')
+    compile files('libs/Game_Analytics_SDK_Android_V3.2.18.jar')
+    compile files('libs/TalkingData_AdTracking_SDK_Android.jar')
+    compile files('libs/BaiduLBS_Android.jar')
+}

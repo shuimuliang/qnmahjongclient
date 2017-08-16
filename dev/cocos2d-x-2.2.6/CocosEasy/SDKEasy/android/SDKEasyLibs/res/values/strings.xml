@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="exit_ask">您确定要退出吗？</string>
+    <string name="exit_tip">提示</string>
+    <string name="exit_sure">确定</string>
+    <string name="exit_cancel">取消</string>
+</resources>

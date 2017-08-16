@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "fd0d6caa-1521-4b19-ab7d-113b7bf62233",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "fd0d6caa-1521-4b19-ab7d-113b7bf62233" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "fd0d6caa-1521-4b19-ab7d-113b7bf62233" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6EF565EE-B9AD-4E60-B5F8-DA526430E524",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "fd0d6caa-1521-4b19-ab7d-113b7bf62233" : "jinhua\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Casino",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "majiang_1.0\/dev\/cocos2d-x-2.2.6\/projects\/Casino\/proj.ios\/Casino.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/106.75.15.98\/svn\/repos\/jinhua",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "fd0d6caa-1521-4b19-ab7d-113b7bf62233"
+    }
+  ]
+}
